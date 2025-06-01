@@ -769,6 +769,41 @@
               <FileType>5</FileType>
               <FilePath>.\Hardware\JTAG.h</FilePath>
             </File>
+            <File>
+              <FileName>OLED_Menu.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Hardware\OLED_Menu.c</FilePath>
+            </File>
+            <File>
+              <FileName>OLED_Menu.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Hardware\OLED_Menu.h</FilePath>
+            </File>
+            <File>
+              <FileName>OLED_Font.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\OLED_Font.c</FilePath>
+            </File>
+            <File>
+              <FileName>seg.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Hardwre\seg.c</FilePath>
+            </File>
+            <File>
+              <FileName>seg.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Hardware\seg.h</FilePath>
+            </File>
+            <File>
+              <FileName>Beep.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Hardware\Beep.c</FilePath>
+            </File>
+            <File>
+              <FileName>Beep.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Hardware\Beep.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

@@ -34,8 +34,11 @@
 .\objects\main.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\main.o: .\Hardware\multibutton.h
 .\objects\main.o: D:\keil5\ARM\ARMCC\Bin\..\include\string.h
-.\objects\main.o: .\Hardware\Key.h
 .\objects\main.o: .\Hardware\SR03.h
 .\objects\main.o: .\Hardware\Timer.h
 .\objects\main.o: .\Hardware\HT11.h
 .\objects\main.o: .\Hardware\JTAG.h
+.\objects\main.o: .\Hardware\Key.h
+.\objects\main.o: .\Hardware\OLED_Menu.h
+.\objects\main.o: .\Hardware\LED.h
+.\objects\main.o: .\Hardware\seg.h

@@ -68,8 +68,9 @@ void EXTI2_IRQHandler(void)
 void SR03_Strat(void)
 {
 	GPIO_SetBits(GPIOA,Trig);  
-	Delay_us(20);              
+	Delay_us(10);              
 	GPIO_ResetBits(GPIOA,Trig); 
+	
 }
 
 

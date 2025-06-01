@@ -491,5 +491,3 @@ void OLED_Init(void)
 	OLED_WR_Byte(0x14,OLED_CMD);//
 	OLED_WR_Byte(0xAF,OLED_CMD);//--turn on oled panel
 }  
-
-

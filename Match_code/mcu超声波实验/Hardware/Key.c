@@ -7,7 +7,10 @@
 #define Key3_pin GPIO_Pin_15
 #include "OLED.h"
 //按键PB4与PB5
-static int keynum = 0;
+
+struct Button btn1;
+struct Button btn2;
+struct Button btn3;
 void Key_1_2_Init(void)
 {
 	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOB, ENABLE);
@@ -54,7 +57,20 @@ uint8_t Key_GetNum(void)
 }
 
 
-
+uint8_t read_button_GPIO(uint8_t button_id)
+{
+	switch(button_id)
+	{
+		case btn1_id:
+			return GPIO_ReadInputDataBit(GPIOA,GPIO_Pin_15);
+		case btn2_id:
+			return GPIO_ReadInputDataBit(GPIOB,GPIO_Pin_4);
+		case btn3_id:
+			return GPIO_ReadInputDataBit(GPIOB,GPIO_Pin_5);
+		default:
+			return 0;
+	}
+}
 
 
 
