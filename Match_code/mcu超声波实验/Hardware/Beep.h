@@ -4,5 +4,5 @@
 #include "sys.h"
 void Beep_Init();
 void Set_Beep_compare(int Compare);
-int Dist_tocompare(float dist);
+int Dist_tocompare(int dist);
 #endif 

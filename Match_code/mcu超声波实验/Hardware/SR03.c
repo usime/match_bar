@@ -32,6 +32,37 @@ void SR03_Init(void)
 	NVIC_InitSture.NVIC_IRQChannelSubPriority=2;
 	NVIC_Init(&NVIC_InitSture);
 }
+int median_filter(int Data, int median_buffer[], int* buffer_index) {
+    static int init = 0;
+    if (!init) {
+        for (int i = 0; i < FILTER_WINDOW_SIZE; ++i) {
+            median_buffer[i] = Data;
+        }
+        init = 1;
+    }
+    median_buffer[(*buffer_index)++] = Data;
+    if (*buffer_index >= FILTER_WINDOW_SIZE) {
+        *buffer_index = 0;
+    }
+    // 对缓冲区进行排序
+    int temp_buffer[FILTER_WINDOW_SIZE];
+    for (int i = 0; i < FILTER_WINDOW_SIZE; ++i) {
+        temp_buffer[i] = median_buffer[i];
+    }
+    for (int i = 0; i < FILTER_WINDOW_SIZE - 1; ++i) {
+        for (int j = 0; j < FILTER_WINDOW_SIZE - 1 - i; ++j) {
+            if (temp_buffer[j] > temp_buffer[j + 1]) {
+                int temp = temp_buffer[j];
+                temp_buffer[j] = temp_buffer[j + 1];
+                temp_buffer[j + 1] = temp;
+            }
+        }
+    }
+
+    // 取中间值作为中值滤波结果
+    int median = temp_buffer[FILTER_WINDOW_SIZE / 2];
+    return median;
+}
 int moving_filter(int Data, int filter_buffer[], int* buffer_index) {
     static int init = 0;  
     if (!init) {
@@ -72,11 +103,15 @@ void SR03_Strat(void)
 	GPIO_ResetBits(GPIOA,Trig); 
 	
 }
+float linear_compensation_function(float measured_distance) {
+    // 根据提供的数据点拟合得到的线性补偿函数
+    // 这里使用的是一个简单的线性回归模型
+    float slope = 1.4;  // 斜率
+    float intercept = -0.5;  // 截距
 
-
-
-
-
+    // 补偿后的距离 = slope * measured_distance + intercept
+    return slope * measured_distance + intercept;
+}
 
 
 

@@ -880,8 +880,8 @@ I (.\System\delay.h)(0x683020DA)
 I (Hardware\OLED_Font.h)(0x683C2233)
 F (.\Hardware\OLED.h)(0x683C2245)()
 F (.\Hardware\OLED_Font.h)(0x683C2233)()
-F (.\Hardware\SR03.c)(0x683C496C)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I .\Start -I .\Library -I .\User -I .\System -I .\Hardware-ID:\keil5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="539" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\sr03.o --omf_browse .\objects\sr03.crf --depend .\objects\sr03.d)
-I (Hardware\SR03.h)(0x68302FA7)
+F (.\Hardware\SR03.c)(0x683EF73E)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I .\Start -I .\Library -I .\User -I .\System -I .\Hardware-ID:\keil5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="539" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\sr03.o --omf_browse .\objects\sr03.crf --depend .\objects\sr03.d)
+I (Hardware\SR03.h)(0x683EF58A)
 I (.\System\delay.h)(0x683020DA)
 I (D:\keil5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
 I (.\Start\stm32f10x.h)(0x4D783CB4)
@@ -984,7 +984,7 @@ I (.\Library\misc.h)(0x4D783BB4)
 I (Hardware\multibutton.h)(0x682F1CF7)
 I (D:\keil5\ARM\ARMCC\include\string.h)(0x599ECD2C)
 F (.\Hardware\Timer.h)(0x6832B8C9)()
-F (.\Hardware\SR03.h)(0x68302FA7)()
+F (.\Hardware\SR03.h)(0x683EF58A)()
 F (.\Hardware\sys.h)(0x6832AC0B)()
 F (.\Hardware\JTAG.c)(0x6832B439)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I .\Start -I .\Library -I .\User -I .\System -I .\Hardware-ID:\keil5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="539" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\jtag.o --omf_browse .\objects\jtag.crf --depend .\objects\jtag.d)
 I (.\Start\stm32f10x.h)(0x4D783CB4)
@@ -1019,8 +1019,8 @@ F (.\Hardware\JTAG.h)(0x6832B439)()
 F (.\Hardware\OLED_Menu.c)(0x683C20BC)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I .\Start -I .\Library -I .\User -I .\System -I .\Hardware-ID:\keil5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="539" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\oled_menu.o --omf_browse .\objects\oled_menu.crf --depend .\objects\oled_menu.d)
 F (.\Hardware\OLED_Menu.h)(0x683C20BC)()
 F (.\OLED_Font.c)(0x683C2254)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I .\Start -I .\Library -I .\User -I .\System -I .\Hardware-ID:\keil5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="539" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\oled_font.o --omf_browse .\objects\oled_font.crf --depend .\objects\oled_font.d)
-F (.\Hardwre\seg.c)(0x683C2780)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I .\Start -I .\Library -I .\User -I .\System -I .\Hardware-ID:\keil5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="539" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\seg.o --omf_browse .\objects\seg.crf --depend .\objects\seg.d)
-I (.\Hardware\seg.h)(0x683C2780)
+F (.\Hardwre\seg.c)(0x683D3629)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I .\Start -I .\Library -I .\User -I .\System -I .\Hardware-ID:\keil5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="539" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\seg.o --omf_browse .\objects\seg.crf --depend .\objects\seg.d)
+I (.\Hardware\seg.h)(0x683D345A)
 I (.\Start\stm32f10x.h)(0x4D783CB4)
 I (.\Start\core_cm3.h)(0x4D523B58)
 I (D:\keil5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
@@ -1051,8 +1051,8 @@ I (.\Library\stm32f10x_wwdg.h)(0x4D783BB4)
 I (.\Library\misc.h)(0x4D783BB4)
 I (.\Hardware\sys.h)(0x6832AC0B)
 I (.\System\delay.h)(0x683020DA)
-F (.\Hardware\seg.h)(0x683C2780)()
-F (.\Hardware\Beep.c)(0x683C4750)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I .\Start -I .\Library -I .\User -I .\System -I .\Hardware-ID:\keil5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="539" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\beep.o --omf_browse .\objects\beep.crf --depend .\objects\beep.d)
+F (.\Hardware\seg.h)(0x683D345A)()
+F (.\Hardware\Beep.c)(0x68400057)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I .\Start -I .\Library -I .\User -I .\System -I .\Hardware-ID:\keil5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="539" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\beep.o --omf_browse .\objects\beep.crf --depend .\objects\beep.d)
 I (.\Start\stm32f10x.h)(0x4D783CB4)
 I (.\Start\core_cm3.h)(0x4D523B58)
 I (D:\keil5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
@@ -1081,8 +1081,8 @@ I (.\Library\stm32f10x_tim.h)(0x4D783BB4)
 I (.\Library\stm32f10x_usart.h)(0x4D783BB4)
 I (.\Library\stm32f10x_wwdg.h)(0x4D783BB4)
 I (.\Library\misc.h)(0x4D783BB4)
-F (.\Hardware\Beep.h)(0x683C4750)()
-F (.\User\main.c)(0x683C4BF6)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I .\Start -I .\Library -I .\User -I .\System -I .\Hardware-ID:\keil5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="539" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+F (.\Hardware\Beep.h)(0x683FF73F)()
+F (.\User\main.c)(0x684003C3)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I .\Start -I .\Library -I .\User -I .\System -I .\Hardware-ID:\keil5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="539" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
 I (.\Start\stm32f10x.h)(0x4D783CB4)
 I (.\Start\core_cm3.h)(0x4D523B58)
 I (D:\keil5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
@@ -1117,14 +1117,15 @@ I (.\Hardware\sys.h)(0x6832AC0B)
 I (D:\keil5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
 I (.\Hardware\multibutton.h)(0x682F1CF7)
 I (D:\keil5\ARM\ARMCC\include\string.h)(0x599ECD2C)
-I (.\Hardware\SR03.h)(0x68302FA7)
+I (.\Hardware\SR03.h)(0x683EF58A)
 I (.\Hardware\Timer.h)(0x6832B8C9)
 I (.\Hardware\HT11.h)(0x6832BDCC)
 I (.\Hardware\JTAG.h)(0x6832B439)
 I (.\Hardware\Key.h)(0x6839CDDB)
+I (.\Hardware\Beep.h)(0x683FF73F)
 I (.\Hardware\OLED_Menu.h)(0x683C20BC)
 I (.\Hardware\LED.h)(0x683C4B32)
-I (.\Hardware\seg.h)(0x683C2780)
+I (.\Hardware\seg.h)(0x683D345A)
 F (.\User\stm32f10x_conf.h)(0x4D99A59E)()
 F (.\User\stm32f10x_it.c)(0x4D99A59E)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I .\Start -I .\Library -I .\User -I .\System -I .\Hardware-ID:\keil5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-D__UVISION_VERSION="539" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\stm32f10x_it.o --omf_browse .\objects\stm32f10x_it.crf --depend .\objects\stm32f10x_it.d)
 I (User\stm32f10x_it.h)(0x4D99A59E)

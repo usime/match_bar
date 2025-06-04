@@ -39,6 +39,7 @@
 .\objects\main.o: .\Hardware\HT11.h
 .\objects\main.o: .\Hardware\JTAG.h
 .\objects\main.o: .\Hardware\Key.h
+.\objects\main.o: .\Hardware\Beep.h
 .\objects\main.o: .\Hardware\OLED_Menu.h
 .\objects\main.o: .\Hardware\LED.h
 .\objects\main.o: .\Hardware\seg.h

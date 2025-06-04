@@ -24,5 +24,5 @@
 
 void SEG_init(void);
 void Write_Seg(u8 num,u8 com);
-
+void Write_Seg_WithDot(u8 num, u8 com);
 #endif 
