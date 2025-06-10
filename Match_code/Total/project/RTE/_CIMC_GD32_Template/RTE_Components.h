@@ -3,8 +3,8 @@
  * Auto generated Run-Time-Environment Component Configuration File
  *      *** Do not modify ! ***
  *
- * Project: 'CIMC_GD32_LED_driver' 
- * Target:  'CIMC_GD32_LED_driver' 
+ * Project: 'CIMC_GD32_Template' 
+ * Target:  'CIMC_GD32_Template' 
  */
 
 #ifndef RTE_COMPONENTS_H
