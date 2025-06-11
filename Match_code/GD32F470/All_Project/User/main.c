@@ -45,6 +45,7 @@ void BTN6_SINGLEClick_Handler(void* btn)
 int main(void)
 {
 	int last_update=0;
+	
 	System_Init();   // 系统初始化
 	button_init(&btn1, read_button_GPIO, 0, btn1_id);
 	button_init(&btn2, read_button_GPIO, 0, btn2_id);
@@ -70,8 +71,7 @@ int main(void)
 	 {
 		OLED_ShowString(0,0,"**Hello CIMC**.",16);
 		if(cnt-last_update==5){
-		last_update=cnt;
-		
+		last_update=cnt;		
 		}	
 	
 	 //  获取转换结束标志

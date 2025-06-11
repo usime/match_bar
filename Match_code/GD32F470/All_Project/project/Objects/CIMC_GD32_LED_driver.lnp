@@ -1,4 +1,4 @@
---cpu=Cortex-M4.fp.sp
+--cpu=Cortex-M4.fp
 ".\objects\gd32f4xx_it.o"
 ".\objects\main.o"
 ".\objects\systick.o"
