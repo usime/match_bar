@@ -46,6 +46,7 @@ void BTN6_SINGLEClick_Handler(void* btn)
 int main(void)
 {
 	int last_update=0;
+	
 	System_Init();   // 系统初始化
 	button_init(&btn1, read_button_GPIO, 0, btn1_id);
 	button_init(&btn2, read_button_GPIO, 0, btn2_id);
@@ -73,7 +74,11 @@ int main(void)
 		OLED_Printf(0,0,16,"key_num=%d ",adc_value[0]);
 		OLED_Printf(0,16,16,"ADC_VAL=%d.%02d ",adc_value[0]/1000,(adc_value[0]/10)%100);
 		if(cnt-last_update==5){
+<<<<<<< HEAD
 		last_update=cnt;
+=======
+		last_update=cnt;		
+>>>>>>> aad8aef0cf0ea4c7c60bcb8afd1f5fd9431fd112
 		}	
 		OLED_Refresh();
 	 }

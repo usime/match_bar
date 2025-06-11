@@ -736,14 +736,13 @@ ARM Macro Assembler    Page 12
   454 0000001C                 END
               00000000 
               00000000 
-Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M4.fp.sp --apcs=
-interwork --depend=.\objects\startup_gd32f450_470.d -o.\objects\startup_gd32f45
-0_470.o -I.\RTE\_CIMC_GD32_LED_driver -ID:\keil5\ARM\PACK\ARM\CMSIS\5.9.0\CMSIS
-\Core\Include -ID:\keil5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Inc
-lude --predefine="__MICROLIB SETA 1" --predefine="__UVISION_VERSION SETA 539" -
--predefine="_RTE_ SETA 1" --predefine="GD32F470 SETA 1" --predefine="_RTE_ SETA
- 1" --list=.\listings\startup_gd32f450_470.lst ..\CMSIS\GD\GD32F4xx\Source\ARM\
-startup_gd32f450_470.s
+Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M4.fp --apcs=int
+erwork --depend=.\objects\startup_gd32f450_470.d -o.\objects\startup_gd32f450_4
+70.o -I.\RTE\_CIMC_GD32_LED_driver -IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\
+Include -IC:\Keil_v5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include
+ --predefine="__MICROLIB SETA 1" --predefine="__UVISION_VERSION SETA 524" --pre
+define="_RTE_ SETA 1" --predefine="GD32F470 SETA 1" --list=.\listings\startup_g
+d32f450_470.lst ..\CMSIS\GD\GD32F4xx\Source\ARM\startup_gd32f450_470.s
 
 
 

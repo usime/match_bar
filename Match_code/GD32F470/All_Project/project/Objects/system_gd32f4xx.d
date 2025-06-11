@@ -1,7 +1,7 @@
 .\objects\system_gd32f4xx.o: ..\CMSIS\GD\GD32F4xx\Source\system_gd32f4xx.c
 .\objects\system_gd32f4xx.o: ..\CMSIS\GD\GD32F4xx\Include\gd32f4xx.h
 .\objects\system_gd32f4xx.o: ..\CMSIS\core_cm4.h
-.\objects\system_gd32f4xx.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\system_gd32f4xx.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\system_gd32f4xx.o: ..\CMSIS\core_cmInstr.h
 .\objects\system_gd32f4xx.o: ..\CMSIS\core_cmFunc.h
 .\objects\system_gd32f4xx.o: ..\CMSIS\core_cm4_simd.h
@@ -34,7 +34,7 @@
 .\objects\system_gd32f4xx.o: ..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_wwdgt.h
 .\objects\system_gd32f4xx.o: ..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_misc.h
 .\objects\system_gd32f4xx.o: ..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h
-.\objects\system_gd32f4xx.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\system_gd32f4xx.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
 .\objects\system_gd32f4xx.o: ..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h
 .\objects\system_gd32f4xx.o: ..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_ipa.h
 .\objects\system_gd32f4xx.o: ..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_tli.h
