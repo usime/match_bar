@@ -41,7 +41,7 @@ I (..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h)(0x65A7AAB6)
 I (..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_ipa.h)(0x65A7AAB6)
 I (..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_tli.h)(0x65A7AAB6)
 I (..\User\systick.h)(0x61ADC344)
-F (..\User\main.c)(0x68482709)(--c99 --gnu -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\Startup -I ..\Library\GD32F4xx_standard_peripheral\Include -I ..\User -I ..\HeaderFiles -I ..\Function -I ..\HardWare\LED -I ..\CMSIS\GD\GD32F4xx\Include -I .\Hardware -I ..\project-I.\RTE\_CIMC_GD32_LED_driver-ID:\keil5\ARM\PACK\ARM\CMSIS\5.9.0\CMSIS\Core\Include-ID:\keil5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-D__UVISION_VERSION="539" -D_RTE_ -DGD32F470 -D_RTE_ -DUSE_STDPERIPH_DRIVER -DGD32F470-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+F (..\User\main.c)(0x68483BC9)(--c99 --gnu -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\Startup -I ..\Library\GD32F4xx_standard_peripheral\Include -I ..\User -I ..\HeaderFiles -I ..\Function -I ..\HardWare\LED -I ..\CMSIS\GD\GD32F4xx\Include -I .\Hardware -I ..\project-I.\RTE\_CIMC_GD32_LED_driver-ID:\keil5\ARM\PACK\ARM\CMSIS\5.9.0\CMSIS\Core\Include-ID:\keil5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-D__UVISION_VERSION="539" -D_RTE_ -DGD32F470 -D_RTE_ -DUSE_STDPERIPH_DRIVER -DGD32F470-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
 I (..\HeaderFiles\HeaderFiles.h)(0x68442B2C)
 I (..\CMSIS\GD\GD32F4xx\Include\gd32f4xx.h)(0x67D920AE)
 I (..\CMSIS\core_cm4.h)(0x65A7AAB6)
@@ -89,11 +89,13 @@ I (..\HardWare\LED\LED.h)(0x68307E88)
 I (D:\keil5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
 I (.\Hardware\Key.h)(0x684823B2)
 I (..\project\mulbutton.h)(0x683F0221)
-I (.\Hardware\Usart.h)(0x68442B2C)
-I (.\Hardware\OLED.h)(0x6832E5F0)
+I (.\Hardware\Usart.h)(0x68482DC4)
+I (.\Hardware\OLED.h)(0x68482912)
+I (D:\keil5\ARM\ARMCC\include\math.h)(0x599ECD2E)
+I (D:\keil5\ARM\ARMCC\include\stdarg.h)(0x599ECD2A)
 I (.\Hardware\Timer.h)(0x68482065)
-I (.\Hardware\ADC.h)(0x68481AFD)
-I (.\Hardware\SPI.h)(0x68481AFD)
+I (.\Hardware\ADC.h)(0x684836FA)
+I (.\Hardware\SPI.h)(0x684843BD)
 I (.\Hardware\RTC.h)(0x68442D75)
 F (..\User\systick.c)(0x61ADC344)(--c99 --gnu -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\Startup -I ..\Library\GD32F4xx_standard_peripheral\Include -I ..\User -I ..\HeaderFiles -I ..\Function -I ..\HardWare\LED -I ..\CMSIS\GD\GD32F4xx\Include -I .\Hardware -I ..\project-I.\RTE\_CIMC_GD32_LED_driver-ID:\keil5\ARM\PACK\ARM\CMSIS\5.9.0\CMSIS\Core\Include-ID:\keil5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-D__UVISION_VERSION="539" -D_RTE_ -DGD32F470 -D_RTE_ -DUSE_STDPERIPH_DRIVER -DGD32F470-o .\objects\systick.o --omf_browse .\objects\systick.crf --depend .\objects\systick.d)
 I (..\CMSIS\GD\GD32F4xx\Include\gd32f4xx.h)(0x67D920AE)
@@ -183,11 +185,13 @@ I (..\Function\Function.h)(0x67DE7FF6)
 I (D:\keil5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
 I (.\Hardware\Key.h)(0x684823B2)
 I (..\project\mulbutton.h)(0x683F0221)
-I (.\Hardware\Usart.h)(0x68442B2C)
-I (.\Hardware\OLED.h)(0x6832E5F0)
+I (.\Hardware\Usart.h)(0x68482DC4)
+I (.\Hardware\OLED.h)(0x68482912)
+I (D:\keil5\ARM\ARMCC\include\math.h)(0x599ECD2E)
+I (D:\keil5\ARM\ARMCC\include\stdarg.h)(0x599ECD2A)
 I (.\Hardware\Timer.h)(0x68482065)
-I (.\Hardware\ADC.h)(0x68481AFD)
-I (.\Hardware\SPI.h)(0x68481AFD)
+I (.\Hardware\ADC.h)(0x684836FA)
+I (.\Hardware\SPI.h)(0x684843BD)
 I (.\Hardware\RTC.h)(0x68442D75)
 F (.\Hardware\Key.c)(0x684825D9)(--c99 --gnu -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\Startup -I ..\Library\GD32F4xx_standard_peripheral\Include -I ..\User -I ..\HeaderFiles -I ..\Function -I ..\HardWare\LED -I ..\CMSIS\GD\GD32F4xx\Include -I .\Hardware -I ..\project-I.\RTE\_CIMC_GD32_LED_driver-ID:\keil5\ARM\PACK\ARM\CMSIS\5.9.0\CMSIS\Core\Include-ID:\keil5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-D__UVISION_VERSION="539" -D_RTE_ -DGD32F470 -D_RTE_ -DUSE_STDPERIPH_DRIVER -DGD32F470-o .\objects\key.o --omf_browse .\objects\key.crf --depend .\objects\key.d)
 I (Hardware\KEY.h)(0x684823B2)
@@ -238,19 +242,187 @@ I (..\HardWare\LED\LED.h)(0x68307E88)
 I (D:\keil5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
 I (.\Hardware\Key.h)(0x684823B2)
 I (..\project\mulbutton.h)(0x683F0221)
-I (.\Hardware\Usart.h)(0x68442B2C)
-I (.\Hardware\OLED.h)(0x6832E5F0)
+I (.\Hardware\Usart.h)(0x68482DC4)
+I (.\Hardware\OLED.h)(0x68482912)
+I (D:\keil5\ARM\ARMCC\include\math.h)(0x599ECD2E)
+I (D:\keil5\ARM\ARMCC\include\stdarg.h)(0x599ECD2A)
 I (.\Hardware\Timer.h)(0x68482065)
-I (.\Hardware\ADC.h)(0x68481AFD)
-I (.\Hardware\SPI.h)(0x68481AFD)
+I (.\Hardware\ADC.h)(0x684836FA)
+I (.\Hardware\SPI.h)(0x684843BD)
 I (.\Hardware\RTC.h)(0x68442D75)
 F (.\Hardware\Key.h)(0x684823B2)()
-F (.\Hardware\Usart.c)(0x6832E49C)(--c99 --gnu -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\Startup -I ..\Library\GD32F4xx_standard_peripheral\Include -I ..\User -I ..\HeaderFiles -I ..\Function -I ..\HardWare\LED -I ..\CMSIS\GD\GD32F4xx\Include -I .\Hardware -I ..\project-I.\RTE\_CIMC_GD32_LED_driver-ID:\keil5\ARM\PACK\ARM\CMSIS\5.9.0\CMSIS\Core\Include-ID:\keil5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-D__UVISION_VERSION="539" -D_RTE_ -DGD32F470 -D_RTE_ -DUSE_STDPERIPH_DRIVER -DGD32F470-o .\objects\usart.o --omf_browse .\objects\usart.crf --depend .\objects\usart.d)
-F (.\Hardware\Usart.h)(0x68442B2C)()
-F (.\Hardware\ADC.c)(0x6832E4CB)(--c99 --gnu -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\Startup -I ..\Library\GD32F4xx_standard_peripheral\Include -I ..\User -I ..\HeaderFiles -I ..\Function -I ..\HardWare\LED -I ..\CMSIS\GD\GD32F4xx\Include -I .\Hardware -I ..\project-I.\RTE\_CIMC_GD32_LED_driver-ID:\keil5\ARM\PACK\ARM\CMSIS\5.9.0\CMSIS\Core\Include-ID:\keil5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-D__UVISION_VERSION="539" -D_RTE_ -DGD32F470 -D_RTE_ -DUSE_STDPERIPH_DRIVER -DGD32F470-o .\objects\adc.o --omf_browse .\objects\adc.crf --depend .\objects\adc.d)
-F (.\Hardware\ADC.h)(0x68481AFD)()
-F (.\Hardware\SPI.c)(0x6832E4EC)(--c99 --gnu -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\Startup -I ..\Library\GD32F4xx_standard_peripheral\Include -I ..\User -I ..\HeaderFiles -I ..\Function -I ..\HardWare\LED -I ..\CMSIS\GD\GD32F4xx\Include -I .\Hardware -I ..\project-I.\RTE\_CIMC_GD32_LED_driver-ID:\keil5\ARM\PACK\ARM\CMSIS\5.9.0\CMSIS\Core\Include-ID:\keil5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-D__UVISION_VERSION="539" -D_RTE_ -DGD32F470 -D_RTE_ -DUSE_STDPERIPH_DRIVER -DGD32F470-o .\objects\spi.o --omf_browse .\objects\spi.crf --depend .\objects\spi.d)
-F (.\Hardware\SPI.h)(0x68481AFD)()
+F (.\Hardware\Usart.c)(0x684833B2)(--c99 --gnu -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\Startup -I ..\Library\GD32F4xx_standard_peripheral\Include -I ..\User -I ..\HeaderFiles -I ..\Function -I ..\HardWare\LED -I ..\CMSIS\GD\GD32F4xx\Include -I .\Hardware -I ..\project-I.\RTE\_CIMC_GD32_LED_driver-ID:\keil5\ARM\PACK\ARM\CMSIS\5.9.0\CMSIS\Core\Include-ID:\keil5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-D__UVISION_VERSION="539" -D_RTE_ -DGD32F470 -D_RTE_ -DUSE_STDPERIPH_DRIVER -DGD32F470-o .\objects\usart.o --omf_browse .\objects\usart.crf --depend .\objects\usart.d)
+I (..\HeaderFiles\HeaderFiles.h)(0x68442B2C)
+I (..\CMSIS\GD\GD32F4xx\Include\gd32f4xx.h)(0x67D920AE)
+I (..\CMSIS\core_cm4.h)(0x65A7AAB6)
+I (D:\keil5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\CMSIS\core_cmInstr.h)(0x65A7AAB6)
+I (..\CMSIS\core_cmFunc.h)(0x65A7AAB6)
+I (..\CMSIS\core_cm4_simd.h)(0x65A7AAB6)
+I (..\CMSIS\GD\GD32F4xx\Include\system_gd32f4xx.h)(0x65A7AAB6)
+I (..\User\gd32f4xx_libopt.h)(0x67D9195A)
+I (..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_rcu.h)(0x67D91244)
+I (..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_adc.h)(0x65A7AAB6)
+I (..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_can.h)(0x65A7AAB6)
+I (..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_crc.h)(0x65A7AAB6)
+I (..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_ctc.h)(0x65A7AAB6)
+I (..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_dac.h)(0x65A7AAB6)
+I (..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_dbg.h)(0x65A7AAB6)
+I (..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_dci.h)(0x65A7AAB6)
+I (..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_dma.h)(0x65A7AAB6)
+I (..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_exti.h)(0x65A7AAB6)
+I (..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_fmc.h)(0x65A7AAB6)
+I (..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_fwdgt.h)(0x65A7AAB6)
+I (..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_gpio.h)(0x65A7AAB6)
+I (..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_syscfg.h)(0x65A7AAB6)
+I (..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_i2c.h)(0x65A7AAB6)
+I (..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_iref.h)(0x65A7AAB6)
+I (..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_pmu.h)(0x65A7AAB6)
+I (..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_rtc.h)(0x65A7AAB6)
+I (..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_sdio.h)(0x65A7AAB6)
+I (..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_spi.h)(0x65A7AAB6)
+I (..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_timer.h)(0x65A7AAB6)
+I (..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_trng.h)(0x65A7AAB6)
+I (..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_usart.h)(0x65A7AAB6)
+I (..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_wwdgt.h)(0x65A7AAB6)
+I (..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_misc.h)(0x65A7AAB6)
+I (..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h)(0x65A7AAB6)
+I (D:\keil5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
+I (..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h)(0x65A7AAB6)
+I (..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_ipa.h)(0x65A7AAB6)
+I (..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_tli.h)(0x65A7AAB6)
+I (..\User\systick.h)(0x61ADC344)
+I (D:\keil5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
+I (D:\keil5\ARM\ARMCC\include\string.h)(0x599ECD2C)
+I (..\Function\Function.h)(0x67DE7FF6)
+I (..\HardWare\LED\LED.h)(0x68307E88)
+I (D:\keil5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
+I (.\Hardware\Key.h)(0x684823B2)
+I (..\project\mulbutton.h)(0x683F0221)
+I (.\Hardware\Usart.h)(0x68482DC4)
+I (.\Hardware\OLED.h)(0x68482912)
+I (D:\keil5\ARM\ARMCC\include\math.h)(0x599ECD2E)
+I (D:\keil5\ARM\ARMCC\include\stdarg.h)(0x599ECD2A)
+I (.\Hardware\Timer.h)(0x68482065)
+I (.\Hardware\ADC.h)(0x684836FA)
+I (.\Hardware\SPI.h)(0x684843BD)
+I (.\Hardware\RTC.h)(0x68442D75)
+F (.\Hardware\Usart.h)(0x68482DC4)()
+F (.\Hardware\ADC.c)(0x68483CFF)(--c99 --gnu -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\Startup -I ..\Library\GD32F4xx_standard_peripheral\Include -I ..\User -I ..\HeaderFiles -I ..\Function -I ..\HardWare\LED -I ..\CMSIS\GD\GD32F4xx\Include -I .\Hardware -I ..\project-I.\RTE\_CIMC_GD32_LED_driver-ID:\keil5\ARM\PACK\ARM\CMSIS\5.9.0\CMSIS\Core\Include-ID:\keil5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-D__UVISION_VERSION="539" -D_RTE_ -DGD32F470 -D_RTE_ -DUSE_STDPERIPH_DRIVER -DGD32F470-o .\objects\adc.o --omf_browse .\objects\adc.crf --depend .\objects\adc.d)
+I (..\HeaderFiles\HeaderFiles.h)(0x68442B2C)
+I (..\CMSIS\GD\GD32F4xx\Include\gd32f4xx.h)(0x67D920AE)
+I (..\CMSIS\core_cm4.h)(0x65A7AAB6)
+I (D:\keil5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\CMSIS\core_cmInstr.h)(0x65A7AAB6)
+I (..\CMSIS\core_cmFunc.h)(0x65A7AAB6)
+I (..\CMSIS\core_cm4_simd.h)(0x65A7AAB6)
+I (..\CMSIS\GD\GD32F4xx\Include\system_gd32f4xx.h)(0x65A7AAB6)
+I (..\User\gd32f4xx_libopt.h)(0x67D9195A)
+I (..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_rcu.h)(0x67D91244)
+I (..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_adc.h)(0x65A7AAB6)
+I (..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_can.h)(0x65A7AAB6)
+I (..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_crc.h)(0x65A7AAB6)
+I (..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_ctc.h)(0x65A7AAB6)
+I (..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_dac.h)(0x65A7AAB6)
+I (..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_dbg.h)(0x65A7AAB6)
+I (..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_dci.h)(0x65A7AAB6)
+I (..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_dma.h)(0x65A7AAB6)
+I (..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_exti.h)(0x65A7AAB6)
+I (..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_fmc.h)(0x65A7AAB6)
+I (..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_fwdgt.h)(0x65A7AAB6)
+I (..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_gpio.h)(0x65A7AAB6)
+I (..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_syscfg.h)(0x65A7AAB6)
+I (..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_i2c.h)(0x65A7AAB6)
+I (..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_iref.h)(0x65A7AAB6)
+I (..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_pmu.h)(0x65A7AAB6)
+I (..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_rtc.h)(0x65A7AAB6)
+I (..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_sdio.h)(0x65A7AAB6)
+I (..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_spi.h)(0x65A7AAB6)
+I (..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_timer.h)(0x65A7AAB6)
+I (..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_trng.h)(0x65A7AAB6)
+I (..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_usart.h)(0x65A7AAB6)
+I (..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_wwdgt.h)(0x65A7AAB6)
+I (..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_misc.h)(0x65A7AAB6)
+I (..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h)(0x65A7AAB6)
+I (D:\keil5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
+I (..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h)(0x65A7AAB6)
+I (..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_ipa.h)(0x65A7AAB6)
+I (..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_tli.h)(0x65A7AAB6)
+I (..\User\systick.h)(0x61ADC344)
+I (D:\keil5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
+I (D:\keil5\ARM\ARMCC\include\string.h)(0x599ECD2C)
+I (..\Function\Function.h)(0x67DE7FF6)
+I (..\HardWare\LED\LED.h)(0x68307E88)
+I (D:\keil5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
+I (.\Hardware\Key.h)(0x684823B2)
+I (..\project\mulbutton.h)(0x683F0221)
+I (.\Hardware\Usart.h)(0x68482DC4)
+I (.\Hardware\OLED.h)(0x68482912)
+I (D:\keil5\ARM\ARMCC\include\math.h)(0x599ECD2E)
+I (D:\keil5\ARM\ARMCC\include\stdarg.h)(0x599ECD2A)
+I (.\Hardware\Timer.h)(0x68482065)
+I (.\Hardware\ADC.h)(0x684836FA)
+I (.\Hardware\SPI.h)(0x684843BD)
+I (.\Hardware\RTC.h)(0x68442D75)
+F (.\Hardware\ADC.h)(0x684836FA)()
+F (.\Hardware\SPI.c)(0x684843C2)(--c99 --gnu -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\Startup -I ..\Library\GD32F4xx_standard_peripheral\Include -I ..\User -I ..\HeaderFiles -I ..\Function -I ..\HardWare\LED -I ..\CMSIS\GD\GD32F4xx\Include -I .\Hardware -I ..\project-I.\RTE\_CIMC_GD32_LED_driver-ID:\keil5\ARM\PACK\ARM\CMSIS\5.9.0\CMSIS\Core\Include-ID:\keil5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-D__UVISION_VERSION="539" -D_RTE_ -DGD32F470 -D_RTE_ -DUSE_STDPERIPH_DRIVER -DGD32F470-o .\objects\spi.o --omf_browse .\objects\spi.crf --depend .\objects\spi.d)
+I (Hardware\SPI.h)(0x684843BD)
+I (..\HeaderFiles\HeaderFiles.h)(0x68442B2C)
+I (..\CMSIS\GD\GD32F4xx\Include\gd32f4xx.h)(0x67D920AE)
+I (..\CMSIS\core_cm4.h)(0x65A7AAB6)
+I (D:\keil5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\CMSIS\core_cmInstr.h)(0x65A7AAB6)
+I (..\CMSIS\core_cmFunc.h)(0x65A7AAB6)
+I (..\CMSIS\core_cm4_simd.h)(0x65A7AAB6)
+I (..\CMSIS\GD\GD32F4xx\Include\system_gd32f4xx.h)(0x65A7AAB6)
+I (..\User\gd32f4xx_libopt.h)(0x67D9195A)
+I (..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_rcu.h)(0x67D91244)
+I (..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_adc.h)(0x65A7AAB6)
+I (..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_can.h)(0x65A7AAB6)
+I (..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_crc.h)(0x65A7AAB6)
+I (..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_ctc.h)(0x65A7AAB6)
+I (..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_dac.h)(0x65A7AAB6)
+I (..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_dbg.h)(0x65A7AAB6)
+I (..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_dci.h)(0x65A7AAB6)
+I (..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_dma.h)(0x65A7AAB6)
+I (..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_exti.h)(0x65A7AAB6)
+I (..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_fmc.h)(0x65A7AAB6)
+I (..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_fwdgt.h)(0x65A7AAB6)
+I (..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_gpio.h)(0x65A7AAB6)
+I (..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_syscfg.h)(0x65A7AAB6)
+I (..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_i2c.h)(0x65A7AAB6)
+I (..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_iref.h)(0x65A7AAB6)
+I (..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_pmu.h)(0x65A7AAB6)
+I (..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_rtc.h)(0x65A7AAB6)
+I (..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_sdio.h)(0x65A7AAB6)
+I (..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_spi.h)(0x65A7AAB6)
+I (..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_timer.h)(0x65A7AAB6)
+I (..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_trng.h)(0x65A7AAB6)
+I (..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_usart.h)(0x65A7AAB6)
+I (..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_wwdgt.h)(0x65A7AAB6)
+I (..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_misc.h)(0x65A7AAB6)
+I (..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h)(0x65A7AAB6)
+I (D:\keil5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
+I (..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h)(0x65A7AAB6)
+I (..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_ipa.h)(0x65A7AAB6)
+I (..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_tli.h)(0x65A7AAB6)
+I (..\User\systick.h)(0x61ADC344)
+I (D:\keil5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
+I (D:\keil5\ARM\ARMCC\include\string.h)(0x599ECD2C)
+I (..\Function\Function.h)(0x67DE7FF6)
+I (..\HardWare\LED\LED.h)(0x68307E88)
+I (D:\keil5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
+I (.\Hardware\Key.h)(0x684823B2)
+I (..\project\mulbutton.h)(0x683F0221)
+I (.\Hardware\Usart.h)(0x68482DC4)
+I (.\Hardware\OLED.h)(0x68482912)
+I (D:\keil5\ARM\ARMCC\include\math.h)(0x599ECD2E)
+I (D:\keil5\ARM\ARMCC\include\stdarg.h)(0x599ECD2A)
+I (.\Hardware\Timer.h)(0x68482065)
+I (.\Hardware\ADC.h)(0x684836FA)
+I (.\Hardware\SPI.h)(0x684843BD)
+I (.\Hardware\RTC.h)(0x68442D75)
+F (.\Hardware\SPI.h)(0x684843BD)()
 F (.\Hardware\RTC.c)(0x68442D07)(--c99 --gnu -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\Startup -I ..\Library\GD32F4xx_standard_peripheral\Include -I ..\User -I ..\HeaderFiles -I ..\Function -I ..\HardWare\LED -I ..\CMSIS\GD\GD32F4xx\Include -I .\Hardware -I ..\project-I.\RTE\_CIMC_GD32_LED_driver-ID:\keil5\ARM\PACK\ARM\CMSIS\5.9.0\CMSIS\Core\Include-ID:\keil5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-D__UVISION_VERSION="539" -D_RTE_ -DGD32F470 -D_RTE_ -DUSE_STDPERIPH_DRIVER -DGD32F470-o .\objects\rtc.o --omf_browse .\objects\rtc.crf --depend .\objects\rtc.d)
 I (..\HeaderFiles\HeaderFiles.h)(0x68442B2C)
 I (..\CMSIS\GD\GD32F4xx\Include\gd32f4xx.h)(0x67D920AE)
@@ -299,15 +471,17 @@ I (..\HardWare\LED\LED.h)(0x68307E88)
 I (D:\keil5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
 I (.\Hardware\Key.h)(0x684823B2)
 I (..\project\mulbutton.h)(0x683F0221)
-I (.\Hardware\Usart.h)(0x68442B2C)
-I (.\Hardware\OLED.h)(0x6832E5F0)
+I (.\Hardware\Usart.h)(0x68482DC4)
+I (.\Hardware\OLED.h)(0x68482912)
+I (D:\keil5\ARM\ARMCC\include\math.h)(0x599ECD2E)
+I (D:\keil5\ARM\ARMCC\include\stdarg.h)(0x599ECD2A)
 I (.\Hardware\Timer.h)(0x68482065)
-I (.\Hardware\ADC.h)(0x68481AFD)
-I (.\Hardware\SPI.h)(0x68481AFD)
+I (.\Hardware\ADC.h)(0x684836FA)
+I (.\Hardware\SPI.h)(0x684843BD)
 I (.\Hardware\RTC.h)(0x68442D75)
 F (.\Hardware\RTC.h)(0x68442D75)()
-F (.\Hardware\OLED.c)(0x6832E61E)(--c99 --gnu -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\Startup -I ..\Library\GD32F4xx_standard_peripheral\Include -I ..\User -I ..\HeaderFiles -I ..\Function -I ..\HardWare\LED -I ..\CMSIS\GD\GD32F4xx\Include -I .\Hardware -I ..\project-I.\RTE\_CIMC_GD32_LED_driver-ID:\keil5\ARM\PACK\ARM\CMSIS\5.9.0\CMSIS\Core\Include-ID:\keil5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-D__UVISION_VERSION="539" -D_RTE_ -DGD32F470 -D_RTE_ -DUSE_STDPERIPH_DRIVER -DGD32F470-o .\objects\oled.o --omf_browse .\objects\oled.crf --depend .\objects\oled.d)
-I (Hardware\OLED.h)(0x6832E5F0)
+F (.\Hardware\OLED.c)(0x68482912)(--c99 --gnu -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\Startup -I ..\Library\GD32F4xx_standard_peripheral\Include -I ..\User -I ..\HeaderFiles -I ..\Function -I ..\HardWare\LED -I ..\CMSIS\GD\GD32F4xx\Include -I .\Hardware -I ..\project-I.\RTE\_CIMC_GD32_LED_driver-ID:\keil5\ARM\PACK\ARM\CMSIS\5.9.0\CMSIS\Core\Include-ID:\keil5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-D__UVISION_VERSION="539" -D_RTE_ -DGD32F470 -D_RTE_ -DUSE_STDPERIPH_DRIVER -DGD32F470-o .\objects\oled.o --omf_browse .\objects\oled.crf --depend .\objects\oled.d)
+I (Hardware\OLED.h)(0x68482912)
 I (..\HeaderFiles\HeaderFiles.h)(0x68442B2C)
 I (..\CMSIS\GD\GD32F4xx\Include\gd32f4xx.h)(0x67D920AE)
 I (..\CMSIS\core_cm4.h)(0x65A7AAB6)
@@ -355,18 +529,20 @@ I (..\HardWare\LED\LED.h)(0x68307E88)
 I (D:\keil5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
 I (.\Hardware\Key.h)(0x684823B2)
 I (..\project\mulbutton.h)(0x683F0221)
-I (.\Hardware\Usart.h)(0x68442B2C)
-I (.\Hardware\OLED.h)(0x6832E5F0)
+I (.\Hardware\Usart.h)(0x68482DC4)
+I (.\Hardware\OLED.h)(0x68482912)
 I (.\Hardware\Timer.h)(0x68482065)
-I (.\Hardware\ADC.h)(0x68481AFD)
-I (.\Hardware\SPI.h)(0x68481AFD)
+I (.\Hardware\ADC.h)(0x684836FA)
+I (.\Hardware\SPI.h)(0x684843BD)
 I (.\Hardware\RTC.h)(0x68442D75)
+I (D:\keil5\ARM\ARMCC\include\math.h)(0x599ECD2E)
+I (D:\keil5\ARM\ARMCC\include\stdarg.h)(0x599ECD2A)
 I (Hardware\oledfont.h)(0x6832E61E)
-F (.\Hardware\OLED.h)(0x6832E5F0)()
+F (.\Hardware\OLED.h)(0x68482912)()
 F (.\Hardware\oledfont.h)(0x6832E61E)()
 F (.\Hardware\struct.c)(0x683F0325)(--c99 --gnu -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\Startup -I ..\Library\GD32F4xx_standard_peripheral\Include -I ..\User -I ..\HeaderFiles -I ..\Function -I ..\HardWare\LED -I ..\CMSIS\GD\GD32F4xx\Include -I .\Hardware -I ..\project-I.\RTE\_CIMC_GD32_LED_driver-ID:\keil5\ARM\PACK\ARM\CMSIS\5.9.0\CMSIS\Core\Include-ID:\keil5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-D__UVISION_VERSION="539" -D_RTE_ -DGD32F470 -D_RTE_ -DUSE_STDPERIPH_DRIVER -DGD32F470-o .\objects\struct.o --omf_browse .\objects\struct.crf --depend .\objects\struct.d)
 F (.\Hardware\struct.h)(0x6832EAE1)()
-F (.\Hardware\Timer.c)(0x6848223A)(--c99 --gnu -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\Startup -I ..\Library\GD32F4xx_standard_peripheral\Include -I ..\User -I ..\HeaderFiles -I ..\Function -I ..\HardWare\LED -I ..\CMSIS\GD\GD32F4xx\Include -I .\Hardware -I ..\project-I.\RTE\_CIMC_GD32_LED_driver-ID:\keil5\ARM\PACK\ARM\CMSIS\5.9.0\CMSIS\Core\Include-ID:\keil5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-D__UVISION_VERSION="539" -D_RTE_ -DGD32F470 -D_RTE_ -DUSE_STDPERIPH_DRIVER -DGD32F470-o .\objects\timer.o --omf_browse .\objects\timer.crf --depend .\objects\timer.d)
+F (.\Hardware\Timer.c)(0x684833B2)(--c99 --gnu -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\Startup -I ..\Library\GD32F4xx_standard_peripheral\Include -I ..\User -I ..\HeaderFiles -I ..\Function -I ..\HardWare\LED -I ..\CMSIS\GD\GD32F4xx\Include -I .\Hardware -I ..\project-I.\RTE\_CIMC_GD32_LED_driver-ID:\keil5\ARM\PACK\ARM\CMSIS\5.9.0\CMSIS\Core\Include-ID:\keil5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-D__UVISION_VERSION="539" -D_RTE_ -DGD32F470 -D_RTE_ -DUSE_STDPERIPH_DRIVER -DGD32F470-o .\objects\timer.o --omf_browse .\objects\timer.crf --depend .\objects\timer.d)
 I (..\HeaderFiles\HeaderFiles.h)(0x68442B2C)
 I (..\CMSIS\GD\GD32F4xx\Include\gd32f4xx.h)(0x67D920AE)
 I (..\CMSIS\core_cm4.h)(0x65A7AAB6)
@@ -414,11 +590,13 @@ I (..\HardWare\LED\LED.h)(0x68307E88)
 I (D:\keil5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
 I (.\Hardware\Key.h)(0x684823B2)
 I (..\project\mulbutton.h)(0x683F0221)
-I (.\Hardware\Usart.h)(0x68442B2C)
-I (.\Hardware\OLED.h)(0x6832E5F0)
+I (.\Hardware\Usart.h)(0x68482DC4)
+I (.\Hardware\OLED.h)(0x68482912)
+I (D:\keil5\ARM\ARMCC\include\math.h)(0x599ECD2E)
+I (D:\keil5\ARM\ARMCC\include\stdarg.h)(0x599ECD2A)
 I (.\Hardware\Timer.h)(0x68482065)
-I (.\Hardware\ADC.h)(0x68481AFD)
-I (.\Hardware\SPI.h)(0x68481AFD)
+I (.\Hardware\ADC.h)(0x684836FA)
+I (.\Hardware\SPI.h)(0x684843BD)
 I (.\Hardware\RTC.h)(0x68442D75)
 F (.\Hardware\Timer.h)(0x68482065)()
 F (.\multibutton.c)(0x683F0258)(--c99 --gnu -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\Startup -I ..\Library\GD32F4xx_standard_peripheral\Include -I ..\User -I ..\HeaderFiles -I ..\Function -I ..\HardWare\LED -I ..\CMSIS\GD\GD32F4xx\Include -I .\Hardware -I ..\project-I.\RTE\_CIMC_GD32_LED_driver-ID:\keil5\ARM\PACK\ARM\CMSIS\5.9.0\CMSIS\Core\Include-ID:\keil5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-D__UVISION_VERSION="539" -D_RTE_ -DGD32F470 -D_RTE_ -DUSE_STDPERIPH_DRIVER -DGD32F470-o .\objects\multibutton.o --omf_browse .\objects\multibutton.crf --depend .\objects\multibutton.d)
@@ -474,11 +652,13 @@ I (..\HardWare\LED\LED.h)(0x68307E88)
 I (D:\keil5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
 I (.\Hardware\Key.h)(0x684823B2)
 I (..\project\mulbutton.h)(0x683F0221)
-I (.\Hardware\Usart.h)(0x68442B2C)
-I (.\Hardware\OLED.h)(0x6832E5F0)
+I (.\Hardware\Usart.h)(0x68482DC4)
+I (.\Hardware\OLED.h)(0x68482912)
+I (D:\keil5\ARM\ARMCC\include\math.h)(0x599ECD2E)
+I (D:\keil5\ARM\ARMCC\include\stdarg.h)(0x599ECD2A)
 I (.\Hardware\Timer.h)(0x68482065)
-I (.\Hardware\ADC.h)(0x68481AFD)
-I (.\Hardware\SPI.h)(0x68481AFD)
+I (.\Hardware\ADC.h)(0x684836FA)
+I (.\Hardware\SPI.h)(0x684843BD)
 I (.\Hardware\RTC.h)(0x68442D75)
 F (..\HeaderFiles\HeaderFiles.h)(0x68442B2C)()
 F (..\CMSIS\GD\GD32F4xx\Source\system_gd32f4xx.c)(0x67D91E04)(--c99 --gnu -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\Startup -I ..\Library\GD32F4xx_standard_peripheral\Include -I ..\User -I ..\HeaderFiles -I ..\Function -I ..\HardWare\LED -I ..\CMSIS\GD\GD32F4xx\Include -I .\Hardware -I ..\project-I.\RTE\_CIMC_GD32_LED_driver-ID:\keil5\ARM\PACK\ARM\CMSIS\5.9.0\CMSIS\Core\Include-ID:\keil5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include-D__UVISION_VERSION="539" -D_RTE_ -DGD32F470 -D_RTE_ -DUSE_STDPERIPH_DRIVER -DGD32F470-o .\objects\system_gd32f4xx.o --omf_browse .\objects\system_gd32f4xx.crf --depend .\objects\system_gd32f4xx.d)

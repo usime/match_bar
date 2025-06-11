@@ -16,6 +16,7 @@ extern struct Button btn3;
 extern struct Button btn4;
 extern struct Button btn5;
 extern struct Button btn6;
+extern uint16_t adc_value[2];
 void BTN1_SINGLEClick_Handler(void* btn)
 {
 	Key_num=1;
@@ -65,22 +66,16 @@ int main(void)
 	button_start(&btn5);
 	button_start(&btn6);
 	unsigned char data[]=" ";
-	TIM2_Init(99,1999);//1ms一次中断
+	TIM2_Init(119,1999);
+	DMA_ADC_config_Init();
 	 while(1)
 	 {
-		OLED_ShowString(0,0,"**Hello CIMC**.",16);
+		OLED_Printf(0,0,16,"key_num=%d ",adc_value[0]);
+		OLED_Printf(0,16,16,"ADC_VAL=%d.%02d ",adc_value[0]/1000,(adc_value[0]/10)%100);
 		if(cnt-last_update==5){
 		last_update=cnt;
-		
 		}	
-	
-	 //  获取转换结束标志
-		
-		sprintf(data,"key_num= %2d V",Key_num);
-		OLED_ShowString(0,16,data,16);
-	
 		OLED_Refresh();
-		
 	 }
 }
 

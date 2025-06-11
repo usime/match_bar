@@ -50,6 +50,8 @@
 .\objects\rtc.o: ..\project\mulbutton.h
 .\objects\rtc.o: .\Hardware\Usart.h
 .\objects\rtc.o: .\Hardware\OLED.h
+.\objects\rtc.o: D:\keil5\ARM\ARMCC\Bin\..\include\math.h
+.\objects\rtc.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdarg.h
 .\objects\rtc.o: .\Hardware\Timer.h
 .\objects\rtc.o: .\Hardware\ADC.h
 .\objects\rtc.o: .\Hardware\SPI.h

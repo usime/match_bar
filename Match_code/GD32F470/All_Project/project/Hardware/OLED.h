@@ -12,7 +12,10 @@
 /************************* 头文件 *************************/
 
 #include "HeaderFiles.h"
-
+#include <string.h>
+#include <math.h>
+#include <stdio.h>
+#include <stdarg.h>
 //-----------------OLED端口定义---------------- 
 
 
@@ -34,7 +37,7 @@
 
 #define OLED_CMD  0	//写命令
 #define OLED_DATA 1	//写数据
-
+void OLED_Printf(int16_t X, int16_t Y, uint8_t FontSize, char *format, ...);
 void OLED_ClearPoint(u8 x,u8 y);
 void OLED_ColorTurn(u8 i);
 void OLED_DisplayTurn(u8 i);

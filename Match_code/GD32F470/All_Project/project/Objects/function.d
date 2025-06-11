@@ -51,6 +51,8 @@
 .\objects\function.o: ..\project\mulbutton.h
 .\objects\function.o: .\Hardware\Usart.h
 .\objects\function.o: .\Hardware\OLED.h
+.\objects\function.o: D:\keil5\ARM\ARMCC\Bin\..\include\math.h
+.\objects\function.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdarg.h
 .\objects\function.o: .\Hardware\Timer.h
 .\objects\function.o: .\Hardware\ADC.h
 .\objects\function.o: .\Hardware\SPI.h

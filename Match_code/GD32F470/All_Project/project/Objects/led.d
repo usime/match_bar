@@ -51,6 +51,8 @@
 .\objects\led.o: ..\project\mulbutton.h
 .\objects\led.o: .\Hardware\Usart.h
 .\objects\led.o: .\Hardware\OLED.h
+.\objects\led.o: D:\keil5\ARM\ARMCC\Bin\..\include\math.h
+.\objects\led.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdarg.h
 .\objects\led.o: .\Hardware\Timer.h
 .\objects\led.o: .\Hardware\ADC.h
 .\objects\led.o: .\Hardware\SPI.h

@@ -5,7 +5,7 @@ int cnt=0;
 void TIM2_Init(uint16_t prescaler, uint16_t period) {
     // 使能定时器 2 时钟
     rcu_periph_clock_enable(RCU_TIMER2);
-		 rcu_timer_clock_prescaler_config(RCU_TIMER_PSC_MUL4);//选择时钟源主频为200mhz
+		 rcu_timer_clock_prescaler_config(RCU_TIMER_PSC_MUL4);//选择时钟源主频为240Mhz
     // 定时器参数配置
     timer_parameter_struct timer_initpara;
     timer_deinit(TIMER2);

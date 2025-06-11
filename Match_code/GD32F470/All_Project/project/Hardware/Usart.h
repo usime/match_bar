@@ -1,19 +1,14 @@
-#ifndef __USART_H
-#define __USART_H
-
-/************************* 头文件 *************************/
-
+#ifndef __Usart_H
+#define __Usart_H
 #include "HeaderFiles.h"
-
-/************************* 宏定义 *************************/
-
-//定义第一颗LED状态函数
-
-/************************ 变量定义 ************************/
-
-
-/************************ 函数定义 ************************/
-
-
-				    
+//这是两个缓存的数据
+extern uint8_t Serial_TxPacket[4];				//FF 01 02 03 04 FE
+extern uint8_t Serial_RxPacket[4];
+extern uint8_t Serial_RxValue[4];
+extern uint8_t Serial_RxFlag;//接收标志位
+void  Serial_Init(void);
+uint8_t Serial_GetRxFlag(void);
+void Serial_SendPacket(void);
 #endif
+
+
