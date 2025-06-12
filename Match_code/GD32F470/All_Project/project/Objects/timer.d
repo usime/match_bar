@@ -50,8 +50,8 @@
 .\objects\timer.o: ..\project\mulbutton.h
 .\objects\timer.o: .\Hardware\Usart.h
 .\objects\timer.o: .\Hardware\OLED.h
-.\objects\timer.o: D:\keil5\ARM\ARMCC\Bin\..\include\math.h
-.\objects\timer.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdarg.h
+.\objects\timer.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+.\objects\timer.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
 .\objects\timer.o: .\Hardware\Timer.h
 .\objects\timer.o: .\Hardware\ADC.h
 .\objects\timer.o: .\Hardware\SPI.h

@@ -74,11 +74,7 @@ int main(void)
 		OLED_Printf(0,0,16,"key_num=%d ",adc_value[0]);
 		OLED_Printf(0,16,16,"ADC_VAL=%d.%02d ",adc_value[0]/1000,(adc_value[0]/10)%100);
 		if(cnt-last_update==5){
-<<<<<<< HEAD
 		last_update=cnt;
-=======
-		last_update=cnt;		
->>>>>>> aad8aef0cf0ea4c7c60bcb8afd1f5fd9431fd112
 		}	
 		OLED_Refresh();
 	 }

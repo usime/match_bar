@@ -55,6 +55,6 @@
 .\objects\oled.o: .\Hardware\ADC.h
 .\objects\oled.o: .\Hardware\SPI.h
 .\objects\oled.o: .\Hardware\RTC.h
-.\objects\oled.o: D:\keil5\ARM\ARMCC\Bin\..\include\math.h
-.\objects\oled.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdarg.h
+.\objects\oled.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+.\objects\oled.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
 .\objects\oled.o: Hardware\oledfont.h
