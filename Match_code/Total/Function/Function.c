@@ -133,10 +133,8 @@ void UsrFunction(void)
 		rtc_show_time();
 		delay_1ms(1000);		
 		
-		//delay_1ms(1000);
 		if(Key_num==4){	
-		Key_num=0;
-//		rtc_setup();						
+		Key_num=0;					
 		OLED_Clear();
 		current_state = ADJ_YEAR;
 		while(current_state <ADJ_CONFIRM){

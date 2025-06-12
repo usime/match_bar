@@ -2,7 +2,7 @@
 .\objects\main.o: ..\HeaderFiles\HeaderFiles.h
 .\objects\main.o: ..\CMSIS\GD\GD32F4xx\Include\gd32f4xx.h
 .\objects\main.o: ..\CMSIS\core_cm4.h
-.\objects\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\main.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\main.o: ..\CMSIS\core_cmInstr.h
 .\objects\main.o: ..\CMSIS\core_cmFunc.h
 .\objects\main.o: ..\CMSIS\core_cm4_simd.h
@@ -35,13 +35,13 @@
 .\objects\main.o: ..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_wwdgt.h
 .\objects\main.o: ..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_misc.h
 .\objects\main.o: ..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h
-.\objects\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\main.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdlib.h
 .\objects\main.o: ..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h
 .\objects\main.o: ..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_ipa.h
 .\objects\main.o: ..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_tli.h
 .\objects\main.o: ..\User\systick.h
-.\objects\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
-.\objects\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\main.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\main.o: D:\keil5\ARM\ARMCC\Bin\..\include\string.h
 .\objects\main.o: ..\Function\Function.h
 .\objects\main.o: ..\HeaderFiles\HeaderFiles.h
 .\objects\main.o: ..\HardWare\LED\LED.h

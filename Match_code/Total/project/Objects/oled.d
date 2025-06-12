@@ -3,7 +3,7 @@
 .\objects\oled.o: ..\HeaderFiles\HeaderFiles.h
 .\objects\oled.o: ..\CMSIS\GD\GD32F4xx\Include\gd32f4xx.h
 .\objects\oled.o: ..\CMSIS\core_cm4.h
-.\objects\oled.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\oled.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\oled.o: ..\CMSIS\core_cmInstr.h
 .\objects\oled.o: ..\CMSIS\core_cmFunc.h
 .\objects\oled.o: ..\CMSIS\core_cm4_simd.h
@@ -36,13 +36,13 @@
 .\objects\oled.o: ..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_wwdgt.h
 .\objects\oled.o: ..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_misc.h
 .\objects\oled.o: ..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h
-.\objects\oled.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\oled.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdlib.h
 .\objects\oled.o: ..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h
 .\objects\oled.o: ..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_ipa.h
 .\objects\oled.o: ..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_tli.h
 .\objects\oled.o: ..\User\systick.h
-.\objects\oled.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
-.\objects\oled.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\oled.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\oled.o: D:\keil5\ARM\ARMCC\Bin\..\include\string.h
 .\objects\oled.o: ..\Function\Function.h
 .\objects\oled.o: ..\HeaderFiles\HeaderFiles.h
 .\objects\oled.o: ..\HardWare\LED\LED.h
@@ -55,5 +55,5 @@
 .\objects\oled.o: ..\HardWare\Button1.h
 .\objects\oled.o: ..\HardWare\RTC.h
 .\objects\oled.o: ..\HardWare\oledfont.h
-.\objects\oled.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
-.\objects\oled.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
+.\objects\oled.o: D:\keil5\ARM\ARMCC\Bin\..\include\math.h
+.\objects\oled.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdarg.h

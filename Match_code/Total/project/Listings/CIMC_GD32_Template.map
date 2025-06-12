@@ -1,4 +1,4 @@
-Component: ARM Compiler 5.06 update 5 (build 528) Tool: armlink [4d35e2]
+Component: ARM Compiler 5.06 update 6 (build 750) Tool: armlink [4d35ed]
 
 ==============================================================================
 
@@ -2516,35 +2516,35 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
 
-       268         26          0          4          0       2045   adc.o
-       730         18          0          4          0       3356   button.o
-       154         16          0          0        264       2795   button1.o
-        78          6          0          0          0        951   exti.o
-       464        104          0          8          0       4896   function.o
-       638          8          0          0          0       8628   gd32f4xx_adc.o
-       574          4          0          0          0       3183   gd32f4xx_dma.o
-       224         16          0          0          0       1974   gd32f4xx_exti.o
-       266          0          0          0          0       4955   gd32f4xx_gpio.o
-        32          0          0          0          0      87962   gd32f4xx_it.o
-       216         20          0          0          0       1480   gd32f4xx_misc.o
-        20          6          0          0          0        546   gd32f4xx_pmu.o
-       900         70          0          0          0       7499   gd32f4xx_rcu.o
-       508         24          0          0          0       4146   gd32f4xx_rtc.o
-       172          6          0          0          0        778   gd32f4xx_syscfg.o
-       620         44          0          0          0       5655   gd32f4xx_timer.o
-       738         18          0          0          0      10768   gd32f4xx_usart.o
-        64          4          0          0          0        463   led.o
-        14          0          0          0          0       2771   main.o
-      1420         58       8152          0        576      10556   oled.o
-      2040        850          0         13         36       8377   rtc.o
-       288         32          0         15          0       2362   serial.o
-        36          8        428          0       1024        864   startup_gd32f450_470.o
-       484         32          0          4          0       2691   system_gd32f4xx.o
-       164         24          0          4          0      28806   systick.o
-       148         14          0          4          0       1326   timer.o
+       268         26          0          4          0       2085   adc.o
+       730         18          0          4          0       3396   button.o
+       154         16          0          0        264       2831   button1.o
+        78          6          0          0          0        967   exti.o
+       464        104          0          8          0       4948   function.o
+       638          8          0          0          0       8720   gd32f4xx_adc.o
+       574          4          0          0          0       3211   gd32f4xx_dma.o
+       224         16          0          0          0       1994   gd32f4xx_exti.o
+       266          0          0          0          0       5007   gd32f4xx_gpio.o
+        32          0          0          0          0      88054   gd32f4xx_it.o
+       216         20          0          0          0       1496   gd32f4xx_misc.o
+        20          6          0          0          0        554   gd32f4xx_pmu.o
+       900         70          0          0          0       7579   gd32f4xx_rcu.o
+       508         24          0          0          0       4182   gd32f4xx_rtc.o
+       172          6          0          0          0        786   gd32f4xx_syscfg.o
+       620         44          0          0          0       5723   gd32f4xx_timer.o
+       738         18          0          0          0      10884   gd32f4xx_usart.o
+        64          4          0          0          0        471   led.o
+        14          0          0          0          0       2787   main.o
+      1420         58       8152          0        576      10672   oled.o
+      2040        850          0         13         36       8477   rtc.o
+       288         32          0         15          0       2402   serial.o
+        36          8        428          0       1024        872   startup_gd32f450_470.o
+       484         32          0          4          0       2727   system_gd32f4xx.o
+       164         24          0          4          0      28850   systick.o
+       148         14          0          4          0       1342   timer.o
 
     ----------------------------------------------------------------------
-     11288       1408       8612         60       1904     209833   Object Totals
+     11288       1408       8612         60       1904     211017   Object Totals
          0          0         32          0          0          0   (incl. Generated)
         28          0          0          4          4          0   (incl. Padding)
 
@@ -2599,8 +2599,8 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-     15024       1520       8612         64       1904     197309   Grand Totals
-     15024       1520       8612         64       1904     197309   ELF Image Totals
+     15024       1520       8612         64       1904     198493   Grand Totals
+     15024       1520       8612         64       1904     198493   ELF Image Totals
      15024       1520       8612         64          0          0   ROM Totals
 
 ==============================================================================
