@@ -1,0 +1,76 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.39.0.0
+Copyright (C) 2023 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 西瓜 DELL, 电赛国一, LIC=ATTQ1-CBFKR-63VMB-2Y9NJ-MD3AY-6WKVH
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.39.0.0
+Toolchain Path:  D:\keil5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.39.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.2.0.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+F:\CIMC西门子嵌入式\2025工业嵌入式开发资料\04 例程模板\Y_Total_0613\Y_Total_0613\project\CIMC_GD32_fatfs_driver.uvprojx
+Project File Date:  06/14/2025
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'D:\keil5\ARM\ARMCC\Bin'
+Build target 'CIMC_GD32_fatfs_driver'
+compiling LED.c...
+compiling Serial.c...
+..\HardWare\Serial\Serial.c(200): warning:  #940-D: missing return statement at end of non-void function "Usart_flag_ret" 
+  }
+..\HardWare\Serial\Serial.c: 1 warning, 0 errors
+compiling main.c...
+compiling Button1.c...
+compiling Button.c...
+compiling Timer.c...
+compiling SPI_FLASH.c...
+compiling Function.c...
+..\Function\Function.c(52): warning:  #223-D: function "Parm_Init" declared implicitly
+  	Parm_Init(&Par_Init);
+..\Function\Function.c: 1 warning, 0 errors
+compiling EXTI.c...
+compiling ADC.c...
+compiling MySD.c...
+compiling OLED.c...
+linking...
+Program Size: Code=8144 RO-data=460 RW-data=88 ZI-data=2144  
+".\Objects\CIMC_GD32_fatfs_driver.axf" - 0 Error(s), 2 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM::CMSIS@5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: GigaDevice
+                https://gd32mcu.com/data/documents/pack/GigaDevice.GD32F4xx_DFP.3.0.3.pack
+                GigaDevice::GD32F4xx_DFP@3.0.3
+                GigaDevice GD32F4xx Series Device Support and Examples
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_CIMC_GD32_fatfs_driver
+  D:/keil5/ARM/PACK/ARM/CMSIS/5.9.0/CMSIS/Core/Include
+  D:/keil5/ARM/PACK/GigaDevice/GD32F4xx_DFP/3.0.3/Device/F4XX/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE@5.6.0
+Build Time Elapsed:  00:00:11
+</pre>
+</body>
+</html>
