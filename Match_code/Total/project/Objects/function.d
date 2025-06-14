@@ -1,8 +1,16 @@
 .\objects\function.o: ..\Function\Function.c
+<<<<<<< HEAD
 .\objects\function.o: ..\HeaderFiles\HeaderFiles.h
 .\objects\function.o: ..\CMSIS\GD\GD32F4xx\Include\gd32f4xx.h
 .\objects\function.o: ..\CMSIS\core_cm4.h
 .\objects\function.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
+=======
+.\objects\function.o: ..\Function\Function.h
+.\objects\function.o: ..\HeaderFiles\HeaderFiles.h
+.\objects\function.o: ..\CMSIS\GD\GD32F4xx\Include\gd32f4xx.h
+.\objects\function.o: ..\CMSIS\core_cm4.h
+.\objects\function.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+>>>>>>> ae7142df7f8c6c58cc9546843a09e72c38e859d2
 .\objects\function.o: ..\CMSIS\core_cmInstr.h
 .\objects\function.o: ..\CMSIS\core_cmFunc.h
 .\objects\function.o: ..\CMSIS\core_cm4_simd.h
@@ -35,11 +43,16 @@
 .\objects\function.o: ..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_wwdgt.h
 .\objects\function.o: ..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_misc.h
 .\objects\function.o: ..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h
+<<<<<<< HEAD
 .\objects\function.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdlib.h
+=======
+.\objects\function.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+>>>>>>> ae7142df7f8c6c58cc9546843a09e72c38e859d2
 .\objects\function.o: ..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h
 .\objects\function.o: ..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_ipa.h
 .\objects\function.o: ..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_tli.h
 .\objects\function.o: ..\User\systick.h
+<<<<<<< HEAD
 .\objects\function.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\function.o: D:\keil5\ARM\ARMCC\Bin\..\include\string.h
 .\objects\function.o: ..\Function\Function.h
@@ -53,3 +66,24 @@
 .\objects\function.o: ..\HardWare\Button.h
 .\objects\function.o: ..\HardWare\Button1.h
 .\objects\function.o: ..\HardWare\RTC.h
+=======
+.\objects\function.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\function.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\function.o: ..\Function\Function.h
+.\objects\function.o: ..\HardWare\LED\LED.h
+.\objects\function.o: ..\HardWare\EXTI\EXTI.h
+.\objects\function.o: ..\HeaderFiles\HeaderFiles.h
+.\objects\function.o: ..\HardWare\Serial\Serial.h
+.\objects\function.o: ..\HardWare\OLED\OLED.h
+.\objects\function.o: ..\HardWare\ADC\ADC.h
+.\objects\function.o: ..\HardWare\Timer\Timer.h
+.\objects\function.o: ..\HardWare\Button\Button.h
+.\objects\function.o: ..\HardWare\Button\Button1.h
+.\objects\function.o: ..\HardWare\RTC\RTC.h
+.\objects\function.o: ..\HardWare\SPI_FLASH\SPI_FLASH.h
+.\objects\function.o: ..\Fatfs\ff.h
+.\objects\function.o: ..\Fatfs\integer.h
+.\objects\function.o: ..\Fatfs\ffconf.h
+.\objects\function.o: ..\Fatfs\diskio.h
+.\objects\function.o: ..\HardWare\SDCARD\sdcard.h
+>>>>>>> ae7142df7f8c6c58cc9546843a09e72c38e859d2

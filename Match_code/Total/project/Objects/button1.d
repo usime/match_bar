@@ -3,7 +3,11 @@
 .\objects\button1.o: ..\HeaderFiles\HeaderFiles.h
 .\objects\button1.o: ..\CMSIS\GD\GD32F4xx\Include\gd32f4xx.h
 .\objects\button1.o: ..\CMSIS\core_cm4.h
+<<<<<<< HEAD
 .\objects\button1.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
+=======
+.\objects\button1.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+>>>>>>> ae7142df7f8c6c58cc9546843a09e72c38e859d2
 .\objects\button1.o: ..\CMSIS\core_cmInstr.h
 .\objects\button1.o: ..\CMSIS\core_cmFunc.h
 .\objects\button1.o: ..\CMSIS\core_cm4_simd.h
@@ -36,13 +40,22 @@
 .\objects\button1.o: ..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_wwdgt.h
 .\objects\button1.o: ..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_misc.h
 .\objects\button1.o: ..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h
+<<<<<<< HEAD
 .\objects\button1.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdlib.h
+=======
+.\objects\button1.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+>>>>>>> ae7142df7f8c6c58cc9546843a09e72c38e859d2
 .\objects\button1.o: ..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h
 .\objects\button1.o: ..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_ipa.h
 .\objects\button1.o: ..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_tli.h
 .\objects\button1.o: ..\User\systick.h
+<<<<<<< HEAD
 .\objects\button1.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\button1.o: D:\keil5\ARM\ARMCC\Bin\..\include\string.h
+=======
+.\objects\button1.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\button1.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+>>>>>>> ae7142df7f8c6c58cc9546843a09e72c38e859d2
 .\objects\button1.o: ..\Function\Function.h
 .\objects\button1.o: ..\HeaderFiles\HeaderFiles.h
 .\objects\button1.o: ..\HardWare\LED\LED.h

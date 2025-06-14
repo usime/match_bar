@@ -2,7 +2,11 @@
 .\objects\main.o: ..\HeaderFiles\HeaderFiles.h
 .\objects\main.o: ..\CMSIS\GD\GD32F4xx\Include\gd32f4xx.h
 .\objects\main.o: ..\CMSIS\core_cm4.h
+<<<<<<< HEAD
 .\objects\main.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
+=======
+.\objects\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+>>>>>>> ae7142df7f8c6c58cc9546843a09e72c38e859d2
 .\objects\main.o: ..\CMSIS\core_cmInstr.h
 .\objects\main.o: ..\CMSIS\core_cmFunc.h
 .\objects\main.o: ..\CMSIS\core_cm4_simd.h
@@ -35,11 +39,16 @@
 .\objects\main.o: ..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_wwdgt.h
 .\objects\main.o: ..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_misc.h
 .\objects\main.o: ..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h
+<<<<<<< HEAD
 .\objects\main.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdlib.h
+=======
+.\objects\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+>>>>>>> ae7142df7f8c6c58cc9546843a09e72c38e859d2
 .\objects\main.o: ..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h
 .\objects\main.o: ..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_ipa.h
 .\objects\main.o: ..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_tli.h
 .\objects\main.o: ..\User\systick.h
+<<<<<<< HEAD
 .\objects\main.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\main.o: D:\keil5\ARM\ARMCC\Bin\..\include\string.h
 .\objects\main.o: ..\Function\Function.h
@@ -53,3 +62,18 @@
 .\objects\main.o: ..\HardWare\Button.h
 .\objects\main.o: ..\HardWare\Button1.h
 .\objects\main.o: ..\HardWare\RTC.h
+=======
+.\objects\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\main.o: ..\Function\Function.h
+.\objects\main.o: ..\HeaderFiles\HeaderFiles.h
+.\objects\main.o: ..\HardWare\LED\LED.h
+.\objects\main.o: ..\HardWare\EXTI\EXTI.h
+.\objects\main.o: ..\HardWare\Serial\Serial.h
+.\objects\main.o: ..\HardWare\OLED\OLED.h
+.\objects\main.o: ..\HardWare\ADC\ADC.h
+.\objects\main.o: ..\HardWare\Timer\Timer.h
+.\objects\main.o: ..\HardWare\Button\Button.h
+.\objects\main.o: ..\HardWare\Button\Button1.h
+.\objects\main.o: ..\HardWare\RTC\RTC.h
+>>>>>>> ae7142df7f8c6c58cc9546843a09e72c38e859d2

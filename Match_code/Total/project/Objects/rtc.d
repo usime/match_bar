@@ -1,9 +1,18 @@
+<<<<<<< HEAD
 .\objects\rtc.o: ..\HardWare\RTC.c
 .\objects\rtc.o: ..\HardWare\RTC.h
 .\objects\rtc.o: ..\HeaderFiles\HeaderFiles.h
 .\objects\rtc.o: ..\CMSIS\GD\GD32F4xx\Include\gd32f4xx.h
 .\objects\rtc.o: ..\CMSIS\core_cm4.h
 .\objects\rtc.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
+=======
+.\objects\rtc.o: ..\HardWare\RTC\RTC.c
+.\objects\rtc.o: ..\HardWare\RTC\RTC.h
+.\objects\rtc.o: ..\HeaderFiles\HeaderFiles.h
+.\objects\rtc.o: ..\CMSIS\GD\GD32F4xx\Include\gd32f4xx.h
+.\objects\rtc.o: ..\CMSIS\core_cm4.h
+.\objects\rtc.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+>>>>>>> ae7142df7f8c6c58cc9546843a09e72c38e859d2
 .\objects\rtc.o: ..\CMSIS\core_cmInstr.h
 .\objects\rtc.o: ..\CMSIS\core_cmFunc.h
 .\objects\rtc.o: ..\CMSIS\core_cm4_simd.h
@@ -36,11 +45,16 @@
 .\objects\rtc.o: ..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_wwdgt.h
 .\objects\rtc.o: ..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_misc.h
 .\objects\rtc.o: ..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h
+<<<<<<< HEAD
 .\objects\rtc.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdlib.h
+=======
+.\objects\rtc.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+>>>>>>> ae7142df7f8c6c58cc9546843a09e72c38e859d2
 .\objects\rtc.o: ..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h
 .\objects\rtc.o: ..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_ipa.h
 .\objects\rtc.o: ..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_tli.h
 .\objects\rtc.o: ..\User\systick.h
+<<<<<<< HEAD
 .\objects\rtc.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\rtc.o: D:\keil5\ARM\ARMCC\Bin\..\include\string.h
 .\objects\rtc.o: ..\Function\Function.h
@@ -54,3 +68,18 @@
 .\objects\rtc.o: ..\HardWare\Button.h
 .\objects\rtc.o: ..\HardWare\Button1.h
 .\objects\rtc.o: ..\HardWare\RTC.h
+=======
+.\objects\rtc.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\rtc.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\rtc.o: ..\Function\Function.h
+.\objects\rtc.o: ..\HeaderFiles\HeaderFiles.h
+.\objects\rtc.o: ..\HardWare\LED\LED.h
+.\objects\rtc.o: ..\HardWare\EXTI\EXTI.h
+.\objects\rtc.o: ..\HardWare\Serial\Serial.h
+.\objects\rtc.o: ..\HardWare\OLED\OLED.h
+.\objects\rtc.o: ..\HardWare\ADC\ADC.h
+.\objects\rtc.o: ..\HardWare\Timer\Timer.h
+.\objects\rtc.o: ..\HardWare\Button\Button.h
+.\objects\rtc.o: ..\HardWare\Button\Button1.h
+.\objects\rtc.o: ..\HardWare\RTC\RTC.h
+>>>>>>> ae7142df7f8c6c58cc9546843a09e72c38e859d2

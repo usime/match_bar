@@ -1,8 +1,16 @@
+<<<<<<< HEAD
 .\objects\button.o: ..\HardWare\Button.c
 .\objects\button.o: ..\HeaderFiles\HeaderFiles.h
 .\objects\button.o: ..\CMSIS\GD\GD32F4xx\Include\gd32f4xx.h
 .\objects\button.o: ..\CMSIS\core_cm4.h
 .\objects\button.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
+=======
+.\objects\button.o: ..\HardWare\Button\Button.c
+.\objects\button.o: ..\HeaderFiles\HeaderFiles.h
+.\objects\button.o: ..\CMSIS\GD\GD32F4xx\Include\gd32f4xx.h
+.\objects\button.o: ..\CMSIS\core_cm4.h
+.\objects\button.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+>>>>>>> ae7142df7f8c6c58cc9546843a09e72c38e859d2
 .\objects\button.o: ..\CMSIS\core_cmInstr.h
 .\objects\button.o: ..\CMSIS\core_cmFunc.h
 .\objects\button.o: ..\CMSIS\core_cm4_simd.h
@@ -35,11 +43,16 @@
 .\objects\button.o: ..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_wwdgt.h
 .\objects\button.o: ..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_misc.h
 .\objects\button.o: ..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h
+<<<<<<< HEAD
 .\objects\button.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdlib.h
+=======
+.\objects\button.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+>>>>>>> ae7142df7f8c6c58cc9546843a09e72c38e859d2
 .\objects\button.o: ..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h
 .\objects\button.o: ..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_ipa.h
 .\objects\button.o: ..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_tli.h
 .\objects\button.o: ..\User\systick.h
+<<<<<<< HEAD
 .\objects\button.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\button.o: D:\keil5\ARM\ARMCC\Bin\..\include\string.h
 .\objects\button.o: ..\Function\Function.h
@@ -53,3 +66,18 @@
 .\objects\button.o: ..\HardWare\Button.h
 .\objects\button.o: ..\HardWare\Button1.h
 .\objects\button.o: ..\HardWare\RTC.h
+=======
+.\objects\button.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\button.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\button.o: ..\Function\Function.h
+.\objects\button.o: ..\HeaderFiles\HeaderFiles.h
+.\objects\button.o: ..\HardWare\LED\LED.h
+.\objects\button.o: ..\HardWare\EXTI\EXTI.h
+.\objects\button.o: ..\HardWare\Serial\Serial.h
+.\objects\button.o: ..\HardWare\OLED\OLED.h
+.\objects\button.o: ..\HardWare\ADC\ADC.h
+.\objects\button.o: ..\HardWare\Timer\Timer.h
+.\objects\button.o: ..\HardWare\Button\Button.h
+.\objects\button.o: ..\HardWare\Button\Button1.h
+.\objects\button.o: ..\HardWare\RTC\RTC.h
+>>>>>>> ae7142df7f8c6c58cc9546843a09e72c38e859d2

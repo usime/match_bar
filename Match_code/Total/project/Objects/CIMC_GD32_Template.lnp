@@ -1,7 +1,16 @@
+<<<<<<< HEAD
 --cpu=Cortex-M4.fp.sp
 ".\objects\gd32f4xx_it.o"
 ".\objects\main.o"
 ".\objects\systick.o"
+=======
+--cpu=Cortex-M4.fp
+".\objects\gd32f4xx_it.o"
+".\objects\main.o"
+".\objects\systick.o"
+".\objects\sdcard.o"
+".\objects\spi_flash.o"
+>>>>>>> ae7142df7f8c6c58cc9546843a09e72c38e859d2
 ".\objects\led.o"
 ".\objects\exti.o"
 ".\objects\serial.o"
@@ -9,7 +18,10 @@
 ".\objects\adc.o"
 ".\objects\timer.o"
 ".\objects\button.o"
+<<<<<<< HEAD
 ".\objects\button1.o"
+=======
+>>>>>>> ae7142df7f8c6c58cc9546843a09e72c38e859d2
 ".\objects\rtc.o"
 ".\objects\function.o"
 ".\objects\system_gd32f4xx.o"
@@ -43,6 +55,11 @@
 ".\objects\gd32f4xx_usart.o"
 ".\objects\gd32f4xx_wwdgt.o"
 ".\objects\startup_gd32f450_470.o"
+<<<<<<< HEAD
+=======
+".\objects\diskio.o"
+".\objects\ff.o"
+>>>>>>> ae7142df7f8c6c58cc9546843a09e72c38e859d2
 --library_type=microlib --strict --scatter ".\Objects\CIMC_GD32_Template.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

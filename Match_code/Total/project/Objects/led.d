@@ -1,8 +1,16 @@
+<<<<<<< HEAD
 .\objects\led.o: ..\HardWare\LED.c
 .\objects\led.o: ..\HeaderFiles\HeaderFiles.h
 .\objects\led.o: ..\CMSIS\GD\GD32F4xx\Include\gd32f4xx.h
 .\objects\led.o: ..\CMSIS\core_cm4.h
 .\objects\led.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
+=======
+.\objects\led.o: ..\HardWare\LED\LED.c
+.\objects\led.o: ..\HeaderFiles\HeaderFiles.h
+.\objects\led.o: ..\CMSIS\GD\GD32F4xx\Include\gd32f4xx.h
+.\objects\led.o: ..\CMSIS\core_cm4.h
+.\objects\led.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+>>>>>>> ae7142df7f8c6c58cc9546843a09e72c38e859d2
 .\objects\led.o: ..\CMSIS\core_cmInstr.h
 .\objects\led.o: ..\CMSIS\core_cmFunc.h
 .\objects\led.o: ..\CMSIS\core_cm4_simd.h
@@ -35,11 +43,16 @@
 .\objects\led.o: ..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_wwdgt.h
 .\objects\led.o: ..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_misc.h
 .\objects\led.o: ..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h
+<<<<<<< HEAD
 .\objects\led.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdlib.h
+=======
+.\objects\led.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+>>>>>>> ae7142df7f8c6c58cc9546843a09e72c38e859d2
 .\objects\led.o: ..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h
 .\objects\led.o: ..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_ipa.h
 .\objects\led.o: ..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_tli.h
 .\objects\led.o: ..\User\systick.h
+<<<<<<< HEAD
 .\objects\led.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\led.o: D:\keil5\ARM\ARMCC\Bin\..\include\string.h
 .\objects\led.o: ..\Function\Function.h
@@ -53,3 +66,18 @@
 .\objects\led.o: ..\HardWare\Button.h
 .\objects\led.o: ..\HardWare\Button1.h
 .\objects\led.o: ..\HardWare\RTC.h
+=======
+.\objects\led.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\led.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\led.o: ..\Function\Function.h
+.\objects\led.o: ..\HeaderFiles\HeaderFiles.h
+.\objects\led.o: ..\HardWare\LED\LED.h
+.\objects\led.o: ..\HardWare\EXTI\EXTI.h
+.\objects\led.o: ..\HardWare\Serial\Serial.h
+.\objects\led.o: ..\HardWare\OLED\OLED.h
+.\objects\led.o: ..\HardWare\ADC\ADC.h
+.\objects\led.o: ..\HardWare\Timer\Timer.h
+.\objects\led.o: ..\HardWare\Button\Button.h
+.\objects\led.o: ..\HardWare\Button\Button1.h
+.\objects\led.o: ..\HardWare\RTC\RTC.h
+>>>>>>> ae7142df7f8c6c58cc9546843a09e72c38e859d2

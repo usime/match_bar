@@ -1,7 +1,11 @@
 .\objects\systick.o: ..\User\systick.c
 .\objects\systick.o: ..\CMSIS\GD\GD32F4xx\Include\gd32f4xx.h
 .\objects\systick.o: ..\CMSIS\core_cm4.h
+<<<<<<< HEAD
 .\objects\systick.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
+=======
+.\objects\systick.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+>>>>>>> ae7142df7f8c6c58cc9546843a09e72c38e859d2
 .\objects\systick.o: ..\CMSIS\core_cmInstr.h
 .\objects\systick.o: ..\CMSIS\core_cmFunc.h
 .\objects\systick.o: ..\CMSIS\core_cm4_simd.h
@@ -34,7 +38,11 @@
 .\objects\systick.o: ..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_wwdgt.h
 .\objects\systick.o: ..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_misc.h
 .\objects\systick.o: ..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h
+<<<<<<< HEAD
 .\objects\systick.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdlib.h
+=======
+.\objects\systick.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+>>>>>>> ae7142df7f8c6c58cc9546843a09e72c38e859d2
 .\objects\systick.o: ..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h
 .\objects\systick.o: ..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_ipa.h
 .\objects\systick.o: ..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_tli.h

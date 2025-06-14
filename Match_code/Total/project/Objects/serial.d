@@ -1,8 +1,16 @@
+<<<<<<< HEAD
 .\objects\serial.o: ..\HardWare\Serial.c
 .\objects\serial.o: ..\HeaderFiles\HeaderFiles.h
 .\objects\serial.o: ..\CMSIS\GD\GD32F4xx\Include\gd32f4xx.h
 .\objects\serial.o: ..\CMSIS\core_cm4.h
 .\objects\serial.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
+=======
+.\objects\serial.o: ..\HardWare\Serial\Serial.c
+.\objects\serial.o: ..\HeaderFiles\HeaderFiles.h
+.\objects\serial.o: ..\CMSIS\GD\GD32F4xx\Include\gd32f4xx.h
+.\objects\serial.o: ..\CMSIS\core_cm4.h
+.\objects\serial.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+>>>>>>> ae7142df7f8c6c58cc9546843a09e72c38e859d2
 .\objects\serial.o: ..\CMSIS\core_cmInstr.h
 .\objects\serial.o: ..\CMSIS\core_cmFunc.h
 .\objects\serial.o: ..\CMSIS\core_cm4_simd.h
@@ -35,11 +43,16 @@
 .\objects\serial.o: ..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_wwdgt.h
 .\objects\serial.o: ..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_misc.h
 .\objects\serial.o: ..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h
+<<<<<<< HEAD
 .\objects\serial.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdlib.h
+=======
+.\objects\serial.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+>>>>>>> ae7142df7f8c6c58cc9546843a09e72c38e859d2
 .\objects\serial.o: ..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h
 .\objects\serial.o: ..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_ipa.h
 .\objects\serial.o: ..\Library\GD32F4xx_standard_peripheral\Include\gd32f4xx_tli.h
 .\objects\serial.o: ..\User\systick.h
+<<<<<<< HEAD
 .\objects\serial.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\serial.o: D:\keil5\ARM\ARMCC\Bin\..\include\string.h
 .\objects\serial.o: ..\Function\Function.h
@@ -53,3 +66,18 @@
 .\objects\serial.o: ..\HardWare\Button.h
 .\objects\serial.o: ..\HardWare\Button1.h
 .\objects\serial.o: ..\HardWare\RTC.h
+=======
+.\objects\serial.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\serial.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\serial.o: ..\Function\Function.h
+.\objects\serial.o: ..\HeaderFiles\HeaderFiles.h
+.\objects\serial.o: ..\HardWare\LED\LED.h
+.\objects\serial.o: ..\HardWare\EXTI\EXTI.h
+.\objects\serial.o: ..\HardWare\Serial\Serial.h
+.\objects\serial.o: ..\HardWare\OLED\OLED.h
+.\objects\serial.o: ..\HardWare\ADC\ADC.h
+.\objects\serial.o: ..\HardWare\Timer\Timer.h
+.\objects\serial.o: ..\HardWare\Button\Button.h
+.\objects\serial.o: ..\HardWare\Button\Button1.h
+.\objects\serial.o: ..\HardWare\RTC\RTC.h
+>>>>>>> ae7142df7f8c6c58cc9546843a09e72c38e859d2

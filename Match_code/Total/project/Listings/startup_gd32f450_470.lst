@@ -736,6 +736,7 @@ ARM Macro Assembler    Page 12
   454 0000001C                 END
               00000000 
               00000000 
+<<<<<<< HEAD
 Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M4.fp.sp --apcs=
 interwork --depend=.\objects\startup_gd32f450_470.d -o.\objects\startup_gd32f45
 0_470.o -I.\RTE\_CIMC_GD32_Template -ID:\keil5\ARM\PACK\ARM\CMSIS\5.9.0\CMSIS\C
@@ -744,6 +745,15 @@ de --predefine="__MICROLIB SETA 1" --predefine="__UVISION_VERSION SETA 539" --p
 redefine="_RTE_ SETA 1" --predefine="GD32F470 SETA 1" --predefine="_RTE_ SETA 1
 " --list=.\listings\startup_gd32f450_470.lst ..\CMSIS\GD\GD32F4xx\Source\ARM\st
 artup_gd32f450_470.s
+=======
+Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M4.fp --apcs=int
+erwork --depend=.\objects\startup_gd32f450_470.d -o.\objects\startup_gd32f450_4
+70.o -I.\RTE\_CIMC_GD32_Template -IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.2.0\CMSIS\In
+clude -IC:\Keil_v5\ARM\PACK\GigaDevice\GD32F4xx_DFP\3.0.3\Device\F4XX\Include -
+-predefine="__MICROLIB SETA 1" --predefine="__UVISION_VERSION SETA 525" --prede
+fine="_RTE_ SETA 1" --predefine="GD32F470 SETA 1" --list=.\listings\startup_gd3
+2f450_470.lst ..\CMSIS\GD\GD32F4xx\Source\ARM\startup_gd32f450_470.s
+>>>>>>> ae7142df7f8c6c58cc9546843a09e72c38e859d2
 
 
 
