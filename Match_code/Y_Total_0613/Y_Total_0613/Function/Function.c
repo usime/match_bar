@@ -84,7 +84,7 @@ void UsrFunction(void)
 
 	while(1)
 	{
-
+printf("%d\r\n", Usart_flag_ret(data_receive,Key_num,&Par_Init));
 		
 
 	}
