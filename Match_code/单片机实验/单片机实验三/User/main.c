@@ -141,11 +141,11 @@ int main(void)
 	Set_Motor_Enable();
 	
 	while (1){
-		if((AD_Value[0]+Key_num)/2>1000){
+		if((AD_Value[0]+Key_num)>2000){
 		Set_speed2=(AD_Value[0]+Key_num)/2;
 		}
 		else{
-		Set_speed2=2000-(AD_Value[0]+Key_num)/2;
+		Set_speed2=4000-(AD_Value[0]+Key_num)/2;
 		}
 		printf("%d,%d\n",Actual_speed,Set_speed2);
 		sprintf(Uart_buffer,"Adjust_mode=%d",Turn_mode_flag);
@@ -155,23 +155,23 @@ int main(void)
 		sprintf(Uart2_buffer,"now_speed=%d",Actual_speed);
 		OLED_ShowString(1,4,Uart2_buffer,30);
 			if(Turn_mode_flag==0){
-				if((AD_Value[0]+Key_num)/2>1000){
+				if((AD_Value[0]+Key_num)>2000){
 				Load_Motor_pwm(Actual_speed,0);
-					if((AD_Value[0]+Key_num)/2>1300){
-					Set_Beep_compare(8000);
-					}
-					else{
-					Set_Beep_compare(8000);
-					}
+//					if((AD_Value[0]+Key_num)/2>3500){
+//					Set_Beep_compare(8000);
+//					}
+//					else{
+//					Set_Beep_compare(0);
+//					}
 				}
-				else if((AD_Value[0]+Key_num)/2<1000){
+				else if((AD_Value[0]+Key_num)<2000){
 				Load_Motor_pwm(0,Actual_speed);
-					if((AD_Value[0]+Key_num)/2<700){
-					Set_Beep_compare(8000);
-					}
-					else{
-					Set_Beep_compare(0);
-					}
+//					if((AD_Value[0]+Key_num)<500){
+//					Set_Beep_compare(8000);
+//					}
+//					else{
+//					Set_Beep_compare(0);
+//					}
 				}
 			}else{
 			Set_Target_speed(&Motor_Ctrl,Set_speed2);

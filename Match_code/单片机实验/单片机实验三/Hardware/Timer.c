@@ -119,7 +119,7 @@ void TIM2_IRQHandler(void)
 		Current_pulse=Pulse_CNT;
 		if(CNT>=50){
 		Ms_50_cnt++;
-		Speed =(60*Current_pulse)/Ms_50_cnt*0.17;
+		Speed =(60*Current_pulse)/Ms_50_cnt*0.3;
 		Actual_speed=Speed_pid_realize(&Motor_Ctrl,Speed);
 		CNT=0;
 		}

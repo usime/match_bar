@@ -1,0 +1,12 @@
+{
+    "files.associations": {
+        "string": "c",
+        "xstring": "c",
+        "xutility": "c",
+        "initializer_list": "c",
+        "xiosbase": "c",
+        "usart2.h": "c",
+        "aliyunconnect.h": "c",
+        "iotmessagehandler.h": "c"
+    }
+}
