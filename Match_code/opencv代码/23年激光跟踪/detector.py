@@ -1,5 +1,7 @@
 import cv2
 import numpy as np
+import time
+
 
 class Detector:
     def __init__(self, maxperimeter=99999, minperimeter=1):
@@ -10,7 +12,7 @@ class Detector:
         # 图像处理相关变量
         self.img = None
         self.processed_img = None
-
+        self.target_locked = False  # 目标锁定标志
         # 大矩形检测相关变量
         self.top_left = None
         self.top_right = None
@@ -28,12 +30,13 @@ class Detector:
         self.squares_center = []
         self.square_points = []
 
-        #滤波函数
-        self.stable_threshold=20
+        # 滤波函数
+        self.stable_threshold = 2
         self.valid_frame_count = 0
         self.target_roi = None
         self.prev_contour = None
-    def Process_img(self, frame,canny_low,canny_high):
+
+    def Process_img(self, frame, canny_low, canny_high):
         """处理输入图像，返回边缘检测结果"""
         self.img = frame
         if self.img is None:
@@ -47,14 +50,19 @@ class Detector:
         # Canny边缘检测
         img_canny = cv2.Canny(gray_blur_img, canny_low, canny_high)
         ##形态学闭运算，先膨胀后腐蚀 清空内部噪点和外部粘连
-        img_closed = cv2.morphologyEx(img_canny, cv2.MORPH_CLOSE,kernel=cv2.getStructuringElement(cv2.MORPH_RECT, (3, 3)), iterations=1)
+        img_closed = cv2.morphologyEx(img_canny, cv2.MORPH_CLOSE,
+                                      kernel=cv2.getStructuringElement(cv2.MORPH_RECT, (3, 3)), iterations=1)
         self.processed_img = img_canny
         return self.processed_img
 
-    def max_rect_roi_get(self, process_img, frame):
+    def max_rect_roi_get(self, frame, detect_value):
         # 获取处理后的图像
         if self.processed_img is None:
-            return 0, 0, 0, 0, 0
+            return detect_value, 0, 0, 0, 0
+
+        # 如果目标已经锁定，直接返回锁定值
+        if self.target_locked:
+            return detect_value, self.target_roi[0], self.target_roi[1], self.target_roi[2], self.target_roi[3]
 
         # 查找轮廓
         contours, _ = cv2.findContours(self.processed_img, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
@@ -62,16 +70,22 @@ class Detector:
         # 初始化变量
         valid_contour = None
         found_valid = False
-        return_value = 0
 
         # 默认坐标值
         x_default = y_default = w_default = h_default = 0
-        if self.target_roi is not None:
-            x_default, y_default, w_default, h_default = self.target_roi
+        if self.prev_contour is not None:
+            x_default, y_default, w_default, h_default = self.prev_contour
 
         # 遍历所有轮廓
         x, y, w, h = x_default, y_default, w_default, h_default
         for cnt in contours:
+            # 计算轮廓周长
+            perimeter = cv2.arcLength(cnt, True)
+
+            # 检查周长是否在有效范围内
+            if perimeter < self.minperimeter or perimeter > self.maxperimeter:
+                continue
+
             # 获取边界矩形
             x_temp, y_temp, w_temp, h_temp = cv2.boundingRect(cnt)
 
@@ -116,8 +130,11 @@ class Detector:
 
             # 检查是否达到稳定帧数
             if self.valid_frame_count >= self.stable_threshold:
-                self.target_roi = valid_contour
-                return_value = 1
+                # 第一次达到稳定帧数时锁定目标
+                if not self.target_locked:
+                    self.target_roi = valid_contour
+                    self.target_locked = True  # 标记目标已锁定
+                    detect_value = 1
         else:
             # 重置计数器
             self.valid_frame_count = 0
@@ -152,177 +169,180 @@ class Detector:
                     2
                 )
 
-        return return_value, x, y, w, h
-
-    def color_red_detect(self, color_dist,frame):
+        return detect_value, x, y, w, h
+    def color_laser_red_detect(self, frame, color_dist):
         """
-        找到图片中的绿色激光点与红色激光点并定位中心
-        :param img: 需要处理的图片
+        找到图片中的红色和绿色激光点并定位中心
+        :param frame: 需要处理的图片
         :param color_dist: 色系下限上限表
-        :return: 绿色激光点中心（x1, y1）;红色激光点中心（x2, y2)
+        :return: 红色激光点中心 (cX2, cY2), 绿色激光点中心 (cX1, cY1), 红色掩膜, 绿色掩膜
         """
-        cX2, cY2 = None, None
-        # 灰度图像处理
+        # 对原始图像进行高斯模糊，减少噪声
         blurred = cv2.GaussianBlur(frame, (11, 11), 0)
-        kernel = np.ones((1, 1), np.uint8)
-        opening = cv2.morphologyEx(blurred, cv2.MORPH_OPEN, kernel)
-        thresh = cv2.threshold(opening, 230, 255, cv2.THRESH_BINARY)[1]
-        # 转化成HSV图像
-        hsv = cv2.cvtColor(thresh, cv2.COLOR_BGR2HSV)
-        # 颜色二值化筛选处理
-        inRange_hsv_red = cv2.inRange(hsv, color_dist['red']['Lower'], color_dist['red']['Upper'])
-        # 找绿色激光
-        # 找红色激光点
-        try:
-            cnts2 = cv2.findContours(inRange_hsv_red.copy(), cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)[-2]
-            c2 = max(cnts2, key=cv2.contourArea)
-            M = cv2.moments(c2)
-            cX2 = int(M["m10"] / M["m00"])
-            cY2 = int(M["m10"] / M["m00"])
-            # 绘制红色激光点的圆形标记
-            cv2.circle(frame, (cX2, cY2), 5, (0, 0, 255), 2)
-        except:
-            print('没有找到红色的激光')
-        return cX2, cY2
 
-    def Find_max_countour(self):
-        """在大矩形中寻找最大轮廓"""
+        # 将 BGR 图像转换为 HSV 色彩空间
+        hsv = cv2.cvtColor(blurred, cv2.COLOR_BGR2HSV)
+
+        # 创建红色两个范围的掩膜并合并
+        mask_red1 = cv2.inRange(hsv, color_dist['red']['Lower1'], color_dist['red']['Upper1'])
+        mask_red2 = cv2.inRange(hsv, color_dist['red']['Lower2'], color_dist['red']['Upper2'])
+        mask_red = cv2.bitwise_or(mask_red1, mask_red2)  # 合并两个红色范围的掩膜
+
+        # 创建绿色的掩膜
+
+        # 对掩膜进行一些形态学操作以减少噪声（开闭运算）
+        kernel = np.ones((5, 5), np.uint8)
+        mask_red_close = cv2.morphologyEx(mask_red, cv2.MORPH_CLOSE, kernel)
+        # 寻找红色激光点的轮廓
+        contours_red, _ = cv2.findContours(mask_red_close, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+        # 寻找绿色激光点的轮廓
+
+        # 初始化激光点位置
+
+        cX2, cY2 = None, None  # 红色激光点
+
+        # 绘制绿色激光点的轮廓并标记中心
+
+        if contours_red:
+            try:
+                area_red = max(contours_red, key=cv2.contourArea)
+                M = cv2.moments(area_red)
+                cX2 = int(M["m10"] / M["m00"])
+                cY2 = int(M["m01"] / M["m00"])
+                cv2.circle(frame, (cX2, cY2), 5, (0, 0, 255), 2)
+            except:
+                print('无法找到红色激光点')
+
+        return (cX2, cY2), mask_red_close
+
+    def Find_max_countour(self, processed_roi_img, roi,detected_corners):
+        """在大矩形中寻找最大轮廓并在roi图像上绘制轮廓与中心点"""
+        self.processed_img = processed_roi_img
         if self.processed_img is None:
-            return None, None
+            return None, None, None, roi
 
-        # 寻找轮廓
-        contours, _ = cv2.findContours(self.processed_img, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
+        contours, _ = cv2.findContours(self.processed_img, cv2.RETR_LIST, cv2.CHAIN_APPROX_SIMPLE)
+        max_contour = None
+        max_perimeter = 0
+        centroid_x = None
+        centroid_y = None
         if not contours:
-            return None, None
-
-        # 存储符合条件的四边形
-        valid_quads = []
+            return None, None, None, roi
+        # 遍历所有轮廓
         for cnt in contours:
             epsilon = 0.02 * cv2.arcLength(cnt, True)
             approx = cv2.approxPolyDP(cnt, epsilon, True)
+            area = cv2.contourArea(cnt)
+            # 轮廓筛选条件：面积 > 2500 且为四边形
+            if area > 2500 and len(approx) == 4:
+                # 在roi上绘制蓝色轮廓
+                cv2.drawContours(roi, [approx], -1, (255, 0, 0), 1)
+                # 提取并排序角点
+                corners = approx.reshape(-1, 2)
+                assert len(corners) == 4, "应恰好有4个角点"
+                center = np.mean(corners, axis=0)
+                diff = corners - center
+                angles = np.arctan2(diff[:, 1], diff[:, 0])
+                sorted_idx = np.argsort(angles)
+                sorted_idx = np.roll(sorted_idx, -np.argmin(angles[sorted_idx]))
+                sorted_corners = corners[sorted_idx]
 
-            # 检查是否为四边形
-            if len(approx) == 4:
-                perimeter = cv2.arcLength(approx, True)
-                if self.minperimeter <= perimeter <= self.maxperimeter:
-                    valid_quads.append((approx, perimeter))
+                # 按左上->右上->右下->左下排序
+                ordered_corners = np.array([
+                    sorted_corners[0],  # 左上
+                    sorted_corners[1],  # 右上
+                    sorted_corners[2],  # 右下
+                    sorted_corners[3]  # 左下
+                ])
 
-        # 如果没有符合条件的四边形
-        if not valid_quads:
-            return None, None
+                # 计算当前轮廓的中心点
+                current_centroid_x = np.mean(ordered_corners[:, 0])
+                current_centroid_y = np.mean(ordered_corners[:, 1])
 
-        # 找到周长最大的四边形
-        best_approx, max_perimeter = max(valid_quads, key=lambda x: x[1])
+                # 在roi上绘制红色中心点 (BGR格式: (0,0,255) = 红色)
+                cv2.circle(roi,
+                           (int(current_centroid_x), int(current_centroid_y)),
+                           3, (0, 0, 255), -1)  # 半径3px, 实心圆
 
-        # 处理角点
-        top_corners = best_approx.reshape(4, 2)
+                detected_corners.append(ordered_corners)
+                # 更新全局中心点（保留最后一个检测到的中心点）
+                centroid_x, centroid_y = current_centroid_x, current_centroid_y
 
-        # 对角点排序: [左上, 右上, 右下, 左下]
-        sorted_corners = sorted(top_corners, key=lambda p: p[1])
-        top_row = sorted(sorted_corners[:2], key=lambda p: p[0])
-        bottom_row = sorted(sorted_corners[2:], key=lambda p: p[0])
+        return detected_corners, centroid_x, centroid_y, roi
 
-        self.sorted_box = np.array([top_row[0], top_row[1], bottom_row[1], bottom_row[0]])
+    def sort_corners_clockwise(self,corners):
+        """
+        按顺时针顺序排序四边形的角点
+        """
+        # 计算质心
+        center_x = np.mean(corners[:, 0])
+        center_y = np.mean(corners[:, 1])
+        # 计算每个角点与质心的角度
+        angles = np.arctan2(corners[:, 1] - center_y, corners[:, 0] - center_x)
+        # 按角度排序
+        sorted_indices = np.argsort(angles)
+        sorted_corners = corners[sorted_indices]
+        return sorted_corners
+    def Find_black_rect_contour(self,processed_roi_img,roi,detected_corners):
+        roi_gray=cv2.cvtColor(roi, cv2.COLOR_BGR2GRAY)
+        kernel_size = (5, 5)
+        kernel = cv2.getStructuringElement(cv2.MORPH_RECT, kernel_size)
+        # 执行开操作（先腐蚀后膨胀）
+        procesed_opened_img = cv2.morphologyEx(processed_roi_img, cv2.MORPH_OPEN, kernel)
+        contours,_=cv2.findContours(procesed_opened_img,cv2.RETR_LIST, cv2.CHAIN_APPROX_SIMPLE)
+        for cnt in contours:
+            epsilon = 0.02 * cv2.arcLength(cnt, True)
+            approx = cv2.approxPolyDP(cnt, epsilon, True)
+            # 计算轮廓面积
+            area = cv2.contourArea(cnt)
+            if 1000<area<2000 and len(approx)==4:
+                cv2.drawContours(roi, [approx], -1, (255, 0, 0), 1)
+                # 提取外框的角点reshape操作可以减少一层维度
+                corners = approx.reshape(-1, 2)
+                detected_corners.append(corners)
+                mask = np.zeros_like(roi_gray)
+                cv2.drawContours(mask, [cnt], -1, 255, thickness=cv2.FILLED)
+                # 使用掩膜提取外框区域
+                inner_region = cv2.bitwise_and(roi_gray, roi_gray, mask=mask)
+                # 再次使用Canny边缘检测和findContours查找内框
+                inner_canny = cv2.Canny(inner_region, 20, 80)
+                inner_contours, _ = cv2.findContours(inner_canny, cv2.RETR_LIST, cv2.CHAIN_APPROX_SIMPLE)
+                for inner_contour in inner_contours:
+                    inner_epsilon = 0.02 * cv2.arcLength(inner_contour, True)
+                    inner_approx = cv2.approxPolyDP(inner_contour, inner_epsilon, True)
+                    inner_area = cv2.contourArea(inner_contour)
+                    # 确保是四边形且面积小于外框
+                    if inner_area < area and len(inner_approx) == 4:
+                        # 提取内框的角点
+                        inner_corners = inner_approx.reshape(-1, 2)
+                        detected_corners.append(inner_corners)
+                        cv2.drawContours(roi, [inner_contour], -1, (0, 255, 0), 1)
+                        # 计算中点框
+                        mid_corners = []
+                        for i in range(4):
+                            mid_x = (corners[i][0] + inner_corners[i][0]) // 2
+                            mid_y = (corners[i][1] + inner_corners[i][1]) // 2
+                            mid_corners.append([mid_x, mid_y])
+                        # 转换为NumPy数组
+                        mid_corners = np.array(mid_corners)
+                        mid_corners = self.sort_corners_clockwise(mid_corners)
+                        print(mid_corners)
+                        # 确保中点框的面积在合理范围内
+                        mid_area = cv2.contourArea(mid_corners)
+                        if 1000 < mid_area:
+                            # 绘制中点框
+                            cv2.drawContours(roi, [mid_corners], -1, (255, 255, 0), 1)
+                            # 在中点框的每条边等分出6个点
+                            for i in range(4):
+                                start = mid_corners[i]
+                                end = mid_corners[(i + 1) % 4]
+                                for j in range(1, 20):
+                                    x = int(start[0] + (end[0] - start[0]) * j / 20)
+                                    y = int(start[1] + (end[1] - start[1]) * j / 20)
+                                    cv2.circle(roi, (x, y), 2, (255, 0, 255), -1)
 
-        # 设置大矩形的四个顶点
-        self.top_left = tuple(self.sorted_box[0])
-        self.top_right = tuple(self.sorted_box[1])
-        self.bottom_right = tuple(self.sorted_box[2])
-        self.bottom_left = tuple(self.sorted_box[3])
-
-        # 绘制轮廓
-        cv2.drawContours(self.img, [self.sorted_box.astype(int)], 0, (0, 255, 0), 2)
-
-        return self.sorted_box, self.img
-
-    def Prepare_center_detection(self, sorted):
-        """准备中心点检测所需的各种参数"""
-        self.sorted_box = sorted
-        if sorted is None:
-            return False
-
-        # 计算大矩形的旋转角度
-        self.angle = np.arctan2(self.bottom_right[1] - self.top_right[1],
-                                self.bottom_right[0] - self.top_right[0])
-
-        # 创建旋转矩阵
-        self.rotation_matrix = np.array([
-            [np.cos(self.angle), -np.sin(self.angle)],
-            [np.sin(self.angle), np.cos(self.angle)]
-        ])
-
-        # 计算大矩形的中心点
-        self.center_big_square = np.array([
-            (self.top_left[0] + self.bottom_right[0]) / 2,
-            (self.top_left[1] + self.bottom_right[1]) / 2
-        ])
-
-        # 计算旋转矩阵的宽度和高度
-        self.width = max(self.distance(self.top_left, self.top_right),
-                         self.distance(self.bottom_left, self.bottom_right))
-
-        self.height = max(self.distance(self.top_left, self.bottom_left),
-                          self.distance(self.top_right, self.bottom_right))
-
-        # 计算内接圆半径
-        min_dimension = min(self.width, self.height)
-        self.neijie_radius = min_dimension / 6  # 假设为小正方形边长的1/2
-
-        return True
-
-    def Calculate_square_centers(self):
-        """计算每个小正方形的中心点坐标"""
-        if self.rotation_matrix is None or self.center_big_square is None:
-            return None
-
-        self.squares_center = []
-
-        # 小正方形的顺序定义
-        square_order = [
-            (0, 0), (0, 1), (0, 2),
-            (1, 0), (1, 1), (1, 2),
-            (2, 0), (2, 1), (2, 2)
-        ]
-
-        # 计算每个小正方形的中心点
-        for row, col in square_order:
-            # 计算小正方形的中心点相对于大矩形中心点的坐标
-            relative_center = np.array([
-                (2 * col - 2) * self.width / 6,
-                (2 * row - 2) * self.height / 6
-            ])
-
-            # 使用旋转矩阵旋转小正方形的中心点
-            rotated_center = np.dot(self.rotation_matrix, relative_center)
-
-            # 计算绝对坐标
-            absolute_center = self.center_big_square + rotated_center
-
-            # 存储中心点坐标和编号
-            self.squares_center.append((absolute_center, row * 3 + col + 1))
-
-            # 绘制内接圆
-            cv2.circle(self.img,
-                       (int(absolute_center[0]), int(absolute_center[1])),
-                       int(self.neijie_radius),
-                       (255, 0, 0), 2)
-
-        return self.squares_center
-
-    def Detect_centers(self):
-        """完整的中心检测流程"""
-        # 处理图像
-        processed_img = self.Process_img(self.img)
-        if processed_img is None:
-            return None
-
-        # 查找轮廓
-        sorted_box, _ = self.Find_max_countour()
-
-        # 准备中心检测参数
-        if not self.Prepare_center_detection(sorted_box):
-            return None
-
-        # 计算中心点
-        centers = self.Calculate_square_centers()
-        return centers
+                            # 绘制中点框的角点
+                            for mid_corner in mid_corners:
+                                x, y = mid_corner
+                                cv2.circle(roi, (x, y), 2, (255, 0, 255), -1)
+        return roi,mid_corners,mask, inner_region
